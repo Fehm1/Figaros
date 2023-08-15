@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Concrete\EntityFramework\Contexts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Figaros.Entities\Figaros.Entities.csproj" />
+    <ProjectReference Include="..\Figaros.Shared\Figaros.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

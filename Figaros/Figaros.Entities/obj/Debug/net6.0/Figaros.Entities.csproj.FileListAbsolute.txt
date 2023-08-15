@@ -1,0 +1,12 @@
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\bin\Debug\net6.0\Figaros.Entities.deps.json
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\bin\Debug\net6.0\Figaros.Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\bin\Debug\net6.0\Figaros.Entities.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.csproj.AssemblyReference.cache
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.AssemblyInfoInputs.cache
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.AssemblyInfo.cs
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\refint\Figaros.Entities.dll
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\Figaros.Entities.pdb
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Entities\obj\Debug\net6.0\ref\Figaros.Entities.dll
