@@ -1,11 +1,11 @@
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\bin\Debug\net6.0\Figaros.Shared.deps.json
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\bin\Debug\net6.0\Figaros.Shared.dll
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\bin\Debug\net6.0\Figaros.Shared.pdb
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.csproj.AssemblyReference.cache
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.AssemblyInfoInputs.cache
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.AssemblyInfo.cs
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.csproj.CoreCompileInputs.cache
-C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\bin\Debug\net6.0\Figaros.Shared.deps.json
-C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\bin\Debug\net6.0\Figaros.Shared.dll
-C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\bin\Debug\net6.0\Figaros.Shared.pdb
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.dll
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\refint\Figaros.Shared.dll
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Shared\obj\Debug\net6.0\Figaros.Shared.pdb
