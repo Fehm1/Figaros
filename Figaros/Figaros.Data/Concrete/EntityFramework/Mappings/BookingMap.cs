@@ -18,8 +18,6 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.Phone).IsRequired();
             builder.Property(a => a.Phone).HasMaxLength(50);
             builder.Property(a => a.Date).IsRequired();
-            builder.Property(a => a.Time).IsRequired();
-            builder.Property(a => a.Time).HasMaxLength(100);
             builder.Property(a => a.Message).IsRequired();
             builder.Property(a => a.Message).HasMaxLength(500);
 
@@ -33,6 +31,7 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.IsActive).HasDefaultValue(true).IsRequired();
             builder.HasOne<Employee>(a => a.Employee).WithMany(a => a.Bookings).HasForeignKey(a => a.EmployeeId);
             builder.HasOne<Service>(a => a.Service).WithMany(a => a.Bookings).HasForeignKey(a => a.ServiceId);
+            builder.HasOne<Time>(a => a.Time).WithMany(a => a.Bookings).HasForeignKey(a => a.TimeId);
             builder.ToTable("Bookings");
         }
     }

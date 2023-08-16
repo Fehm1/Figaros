@@ -17,10 +17,12 @@ namespace Figaros.Data.Concrete.EntityFramework.Contexts
         public DbSet<Price> Prices { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Profession> Professions { get; set; }
+        public DbSet<Request> Requests { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Sponsor> Sponsors { get; set; }
+        public DbSet<Time> Times { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -40,10 +42,12 @@ namespace Figaros.Data.Concrete.EntityFramework.Contexts
             modelBuilder.ApplyConfiguration(new PriceMap());
             modelBuilder.ApplyConfiguration(new ProductMap());
             modelBuilder.ApplyConfiguration(new ProfessionMap());
+            modelBuilder.ApplyConfiguration(new RequestMap());
             modelBuilder.ApplyConfiguration(new ServiceMap());
             modelBuilder.ApplyConfiguration(new SettingMap());
             modelBuilder.ApplyConfiguration(new SliderMap());
             modelBuilder.ApplyConfiguration(new SponsorMap());
+            modelBuilder.ApplyConfiguration(new TimeMap());
         }
     }
 }

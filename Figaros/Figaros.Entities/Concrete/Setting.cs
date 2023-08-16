@@ -4,6 +4,8 @@ namespace Figaros.Entities.Concrete
 {
     public class Setting : EntityBase, IEntity
     {
+        public string HeaderLogo { get; set; }
+        public string FooterLogo { get; set; }
         public string ContactImageString { get; set; }
         public string Location { get; set; }
         public string MondayFridayWorkHours { get; set; }

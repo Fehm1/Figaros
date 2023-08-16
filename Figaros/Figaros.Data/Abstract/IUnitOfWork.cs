@@ -11,10 +11,12 @@
         IPriceRepository Prices { get; }
         IProductRepository Products { get; }
         IProfessionRepository Professions { get; }
+        IRequestRepository Requests { get; }
         IServiceRepository Services { get; }
         ISettingRepository Settings { get; }
         ISliderRepository Sliders { get; }
         ISponsorRepository Sponsors { get; }
+        ITimeRepository Times { get; }
         Task<int> SaveAsync();
     }
 }

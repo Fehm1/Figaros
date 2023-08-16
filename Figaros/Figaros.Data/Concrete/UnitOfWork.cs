@@ -16,10 +16,12 @@ namespace Figaros.Data.Concrete
         private readonly EFPriceRepository _eFPriceRepository;
         private readonly EFProductRepository _eFProductRepository;
         private readonly EFProfessionRepository _eEFProfessionRepository;
+        private readonly EFRequestRepository _eFRequestRepository;
         private readonly EFServiceRepository _eFServiceRepository;
         private readonly EFSettingRepository _eFSettingRepository;
         private readonly EFSliderRepository _eFSliderRepository;
         private readonly EFSponsorRepository _eFSponsorRepository;
+        private readonly EFTimeRepository _eFTimeRepository;
 
         public UnitOfWork(AppDbContext context)
         {
@@ -51,6 +53,10 @@ namespace Figaros.Data.Concrete
         public ISliderRepository Sliders => _eFSliderRepository ?? new EFSliderRepository(_context);
 
         public ISponsorRepository Sponsors => _eFSponsorRepository ?? new EFSponsorRepository(_context);
+
+        public IRequestRepository Requests => _eFRequestRepository ?? new EFRequestRepository(_context);
+
+        public ITimeRepository Times => _eFTimeRepository ?? new EFTimeRepository(_context);
 
         public async ValueTask DisposeAsync()
         {
