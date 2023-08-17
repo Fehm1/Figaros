@@ -6,6 +6,7 @@ namespace Figaros.Services.Abstract
     public interface IServiceService
     {
         Task<IDataResult<ServiceDto>> Get(int ServiceId);
+        Task<IDataResult<ServiceUpdateDto>> GetUpdateDto(int ServiceId);
         Task<IDataResult<ServiceListDto>> GetAll();
         Task<IDataResult<ServiceListDto>> GetAllByNonDeleted();
         Task<IDataResult<ServiceListDto>> GetAllByDeleted();

@@ -1,4 +1,5 @@
-﻿using Figaros.Entities.DTOs.SliderDtos;
+﻿using Figaros.Entities.DTOs.EmployeeDtos;
+using Figaros.Entities.DTOs.SliderDtos;
 using Figaros.Shared.Utilities.Results.Abstract;
 
 namespace Figaros.Services.Abstract
@@ -6,6 +7,7 @@ namespace Figaros.Services.Abstract
     public interface ISliderService
     {
         Task<IDataResult<SliderDto>> Get(int SliderId);
+        Task<IDataResult<SliderUpdateDto>> GetUpdateDto(int SliderId);
         Task<IDataResult<SliderListDto>> GetAll();
         Task<IDataResult<SliderListDto>> GetAllByNonDeleted();
         Task<IDataResult<SliderListDto>> GetAllByDeleted();

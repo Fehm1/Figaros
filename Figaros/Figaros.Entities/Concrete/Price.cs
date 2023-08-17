@@ -7,5 +7,7 @@ namespace Figaros.Entities.Concrete
         public string Service { get; set; }
         public string Description { get; set; }
         public double ServicePrice { get; set; }
+
+        public IList<Booking> Bookings { get; set; }
     }
 }

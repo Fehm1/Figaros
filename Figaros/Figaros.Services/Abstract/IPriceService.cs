@@ -6,6 +6,7 @@ namespace Figaros.Services.Abstract
     public interface IPriceService
     {
         Task<IDataResult<PriceDto>> Get(int PriceId);
+        Task<IDataResult<PriceUpdateDto>> GetUpdateDto(int PriceId);
         Task<IDataResult<PriceListDto>> GetAll();
         Task<IDataResult<PriceListDto>> GetAllByNonDeleted();
         Task<IDataResult<PriceListDto>> GetAllByDeleted();

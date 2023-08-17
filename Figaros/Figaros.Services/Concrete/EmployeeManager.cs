@@ -248,11 +248,11 @@ namespace Figaros.Services.Concrete
                 var restoredEmployee = await _unitOfWork.Employees.UpdateAsync(employee);
                 await _unitOfWork.SaveAsync();
 
-                return new DataResult<EmployeeDto>(ResultStatus.Success, "Əməkdaş uğurla yeniləndi!", new EmployeeDto
+                return new DataResult<EmployeeDto>(ResultStatus.Success, "Əməkdaş uğurla geri qaytarıldı!", new EmployeeDto
                 {
                     Employee = restoredEmployee,
                     ResultStatus = ResultStatus.Success,
-                    Message = "Əməkdaş uğurla yeniləndi!"
+                    Message = "Əməkdaş uğurla geri qaytarıldı!"
                 });
             }
 
@@ -318,11 +318,11 @@ namespace Figaros.Services.Concrete
                 });
             }
 
-            return new DataResult<EmployeeDto>(ResultStatus.Error, "Məlumatlar tapılmadı!", new EmployeeDto
+            return new DataResult<EmployeeDto>(ResultStatus.Error, "Əməkdaş tapılmadı!", new EmployeeDto
             {
                 Employee = null,
                 ResultStatus = ResultStatus.Error,
-                Message = "Məlumatlar tapılmadı!"
+                Message = "Əməkdaş tapılmadı!"
             });
         }
     }

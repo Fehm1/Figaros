@@ -20,6 +20,7 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.Date).IsRequired();
             builder.Property(a => a.Message).IsRequired();
             builder.Property(a => a.Message).HasMaxLength(500);
+            builder.Property(a => a.IsCompleted).HasDefaultValue(false).IsRequired();
 
             builder.Property(a => a.CreatedDate).IsRequired();
             builder.Property(a => a.ModifiedDate).IsRequired();
@@ -30,7 +31,7 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.IsDeleted).HasDefaultValue(false).IsRequired();
             builder.Property(a => a.IsActive).HasDefaultValue(true).IsRequired();
             builder.HasOne<Employee>(a => a.Employee).WithMany(a => a.Bookings).HasForeignKey(a => a.EmployeeId);
-            builder.HasOne<Service>(a => a.Service).WithMany(a => a.Bookings).HasForeignKey(a => a.ServiceId);
+            builder.HasOne<Price>(a => a.Price).WithMany(a => a.Bookings).HasForeignKey(a => a.PriceId);
             builder.HasOne<Time>(a => a.Time).WithMany(a => a.Bookings).HasForeignKey(a => a.TimeId);
             builder.ToTable("Bookings");
         }

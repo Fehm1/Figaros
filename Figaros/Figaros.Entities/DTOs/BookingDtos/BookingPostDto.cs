@@ -13,7 +13,7 @@ namespace Figaros.Entities.DTOs.BookingDtos
         [DisplayName("Xidmət")]
         [Required(ErrorMessage = "{0} daxil edin!")]
         [Range(0, int.MaxValue)]
-        public int ServiceId { get; set; }
+        public int PriceId { get; set; }
 
         [DisplayName("Saat")]
         [Required(ErrorMessage = "{0} daxil edin!")]
@@ -43,5 +43,8 @@ namespace Figaros.Entities.DTOs.BookingDtos
         [Required(ErrorMessage = "{0} daxil edin!")]
         [MaxLength(500, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
         public string Message { get; set; }
+
+        [DisplayName("Tamamlandı?")]
+        public bool IsCompleted { get; set; }
     }
 }

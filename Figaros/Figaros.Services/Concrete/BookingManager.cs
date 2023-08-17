@@ -27,12 +27,12 @@ namespace Figaros.Services.Concrete
             {
                 var booking = _mapper.Map<Booking>(bookingPostDto);
 
-                var addedPackage = await _unitOfWork.Bookings.AddAsync(booking);
+                var addedBooking = await _unitOfWork.Bookings.AddAsync(booking);
                 await _unitOfWork.SaveAsync();
                 BookingDto bookingDto = _mapper.Map<BookingDto>(booking);
                 return new DataResult<BookingDto>(ResultStatus.Success, "Rezervasiya uğurla əlavə edildi!", new BookingDto
                 {
-                    Booking = addedPackage,
+                    Booking = addedBooking,
                     ResultStatus = ResultStatus.Success,
                     Message = "Rezervasiya uğurla əlavə edildi!"
                 });
@@ -205,11 +205,11 @@ namespace Figaros.Services.Concrete
                 var restoredBooking = await _unitOfWork.Bookings.UpdateAsync(booking);
                 await _unitOfWork.SaveAsync();
 
-                return new DataResult<BookingDto>(ResultStatus.Success, "Rezervasiya uğurla yeniləndi!", new BookingDto
+                return new DataResult<BookingDto>(ResultStatus.Success, "Rezervasiya uğurla geri qaytarıldı!", new BookingDto
                 {
                     Booking = restoredBooking,
                     ResultStatus = ResultStatus.Success,
-                    Message = "Rezervasiya uğurla yeniləndi!"
+                    Message = "Rezervasiya uğurla geri qaytarıldı!"
                 });
             }
 
@@ -228,7 +228,7 @@ namespace Figaros.Services.Concrete
             if (booking != null)
             {
                 booking.EmployeeId = bookingUpdateDto.EmployeeId;
-                booking.ServiceId = bookingUpdateDto.ServiceId;
+                booking.PriceId = bookingUpdateDto.PriceId;
                 booking.TimeId = bookingUpdateDto.TimeId;
                 booking.Fullname = bookingUpdateDto.Fullname;
                 booking.Email = bookingUpdateDto.Email;

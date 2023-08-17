@@ -1,4 +1,5 @@
-﻿using Figaros.Entities.DTOs.TimeDtos;
+﻿using Figaros.Entities.DTOs.EmployeeDtos;
+using Figaros.Entities.DTOs.TimeDtos;
 using Figaros.Shared.Utilities.Results.Abstract;
 
 namespace Figaros.Services.Abstract
@@ -6,6 +7,7 @@ namespace Figaros.Services.Abstract
     public interface ITimeService
     {
         Task<IDataResult<TimeDto>> Get(int TimeId);
+        Task<IDataResult<TimeUpdateDto>> GetUpdateDto(int TimeId);
         Task<IDataResult<TimeListDto>> GetAll();
         Task<IDataResult<TimeListDto>> GetAllByNonDeleted();
         Task<IDataResult<TimeListDto>> GetAllByDeleted();

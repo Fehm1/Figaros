@@ -1,4 +1,5 @@
-﻿using Figaros.Entities.DTOs.SponsorDtos;
+﻿using Figaros.Entities.DTOs.EmployeeDtos;
+using Figaros.Entities.DTOs.SponsorDtos;
 using Figaros.Shared.Utilities.Results.Abstract;
 
 namespace Figaros.Services.Abstract
@@ -6,6 +7,7 @@ namespace Figaros.Services.Abstract
     public interface ISponsorService
     {
         Task<IDataResult<SponsorDto>> Get(int SponsorId);
+        Task<IDataResult<SponsorUpdateDto>> GetUpdateDto(int SponsorId);
         Task<IDataResult<SponsorListDto>> GetAll();
         Task<IDataResult<SponsorListDto>> GetAllByNonDeleted();
         Task<IDataResult<SponsorListDto>> GetAllByDeleted();

@@ -6,6 +6,7 @@ namespace Figaros.Services.Abstract
     public interface IFAQService
     {
         Task<IDataResult<FAQDto>> Get(int FAQId);
+        Task<IDataResult<FAQUpdateDto>> GetUpdateDto(int FAQId);
         Task<IDataResult<FAQListDto>> GetAll();
         Task<IDataResult<FAQListDto>> GetAllByNonDeleted();
         Task<IDataResult<FAQListDto>> GetAllByDeleted();

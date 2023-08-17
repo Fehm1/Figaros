@@ -6,6 +6,7 @@ namespace Figaros.Services.Abstract
     public interface IImageService
     {
         Task<IDataResult<ImageDto>> Get(int ImageId);
+        Task<IDataResult<ImageUpdateDto>> GetUpdateDto(int ImageId);
         Task<IDataResult<ImageListDto>> GetAll();
         Task<IDataResult<ImageListDto>> GetAllByNonDeleted();
         Task<IDataResult<ImageListDto>> GetAllByDeleted();

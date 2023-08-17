@@ -6,6 +6,7 @@ namespace Figaros.Services.Abstract
     public interface IProfessionService
     {
         Task<IDataResult<ProfessionDto>> Get(int ProfessionId);
+        Task<IDataResult<ProfessionUpdateDto>> GetUpdateDto(int ProfessionId);
         Task<IDataResult<ProfessionListDto>> GetAll();
         Task<IDataResult<ProfessionListDto>> GetAllByNonDeleted();
         Task<IDataResult<ProfessionListDto>> GetAllByDeleted();

@@ -9,7 +9,6 @@ namespace Figaros.Entities.Concrete
         public string Description { get; set; }
         public bool IsPoster { get; set; }
 
-        public List<Booking> Bookings { get; set; }
         //homepagede de istifade edersen
     }
 }

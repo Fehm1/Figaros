@@ -11,6 +11,8 @@
     <Folder Include="wwwroot\manage\" />
     <Folder Include="wwwroot\uploads\About\" />
     <Folder Include="wwwroot\uploads\Employees\" />
+    <Folder Include="wwwroot\uploads\Images\" />
+    <Folder Include="wwwroot\uploads\OurSalon\" />
   </ItemGroup>
 
 </Project>
