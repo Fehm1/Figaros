@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
@@ -9,14 +9,17 @@
 	<ItemGroup>
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
-		<Folder Include="Abstract\" />
-		<Folder Include="Concrete\" />
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	
+	<ItemGroup>
 		<Folder Include="Extentions\" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Figaros.Data\Figaros.Data.csproj" />
 	  <ProjectReference Include="..\Figaros.Entities\Figaros.Entities.csproj" />
 	</ItemGroup>
 

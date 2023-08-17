@@ -17,6 +17,8 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.Title).HasMaxLength(150);
             builder.Property(a => a.Description).IsRequired();
             builder.Property(a => a.Description).HasMaxLength(500);
+            builder.Property(a => a.IsPoster).IsRequired();
+            builder.Property(a => a.IsPoster).HasDefaultValue(false);
 
             builder.Property(a => a.CreatedDate).IsRequired();
             builder.Property(a => a.ModifiedDate).IsRequired();

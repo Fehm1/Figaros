@@ -26,6 +26,9 @@ namespace Figaros.Entities.DTOs.ServiceDtos
         [MaxLength(500, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
         public string Description { get; set; }
 
+        [DisplayName("Posterdir?")]
+        public bool IsPoster { get; set; }
+
         [DisplayName("Aktivdir?")]
         public bool IsActive { get; set; }
     }

@@ -7,6 +7,7 @@ namespace Figaros.Entities.Concrete
         public string ImageString { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        public bool IsPoster { get; set; }
 
         public List<Booking> Bookings { get; set; }
         //homepagede de istifade edersen
