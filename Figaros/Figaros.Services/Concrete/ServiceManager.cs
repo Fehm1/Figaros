@@ -246,11 +246,11 @@ namespace Figaros.Services.Concrete
                 var deletedService = await _unitOfWork.Services.UpdateAsync(service);
                 await _unitOfWork.SaveAsync();
 
-                return new DataResult<ServiceDto>(ResultStatus.Success, "Xidmət uğurla silindi!", new ServiceDto
+                return new DataResult<ServiceDto>(ResultStatus.Success, "Xidmət uğurla geri qaytarıldı!", new ServiceDto
                 {
                     Service = deletedService,
                     ResultStatus = ResultStatus.Success,
-                    Message = "Xidmət uğurla silindi!"
+                    Message = "Xidmət uğurla geri qaytarıldı!"
                 });
             }
 
