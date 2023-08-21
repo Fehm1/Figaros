@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
 using Figaros.Data.Abstract;
-using Figaros.Entities.Concrete;
-using Figaros.Entities.DTOs.EmployeeDtos;
 using Figaros.Entities.DTOs.ImageDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Extentions;
@@ -235,6 +233,7 @@ namespace Figaros.Services.Concrete
                     image.ImageString = newImage;
                 }
 
+                image.IsActive = ImageUpdateDto.IsActive;
                 image.ModifiedDate = DateTime.Now;
 
                 var updatedImage = await _unitOfWork.Images.UpdateAsync(image);

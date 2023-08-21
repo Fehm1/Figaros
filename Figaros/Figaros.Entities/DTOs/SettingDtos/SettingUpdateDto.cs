@@ -89,6 +89,9 @@ namespace Figaros.Entities.DTOs.SettingDtos
         [Required(ErrorMessage = "{0} daxil edin!")]
         [MaxLength(100, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
         public string TiktokUrl { get; set; }
+        
+        [DisplayName("Müraciət aktivdir?")]
+        public bool IsActiceRequest { get; set; }
 
         [DisplayName("Aktivdir?")]
         public bool IsActive { get; set; }

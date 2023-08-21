@@ -161,6 +161,7 @@ namespace Figaros.Services.Concrete
                 ourSalon.LittleTitle = OurSalonUpdateDto.LittleTitle;
                 ourSalon.Description = OurSalonUpdateDto.Description;
                 ourSalon.RedirectUrl = OurSalonUpdateDto.RedirectUrl;
+                ourSalon.IsActive = OurSalonUpdateDto.IsActive;
                 ourSalon.ModifiedDate = DateTime.Now;
 
                 var updatedOurSalon = await _unitOfWork.OurSalon.UpdateAsync(ourSalon);

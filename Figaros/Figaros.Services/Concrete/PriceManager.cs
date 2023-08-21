@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
 using Figaros.Data.Abstract;
 using Figaros.Entities.Concrete;
-using Figaros.Entities.DTOs.EmployeeDtos;
-using Figaros.Entities.DTOs.FAQDtos;
 using Figaros.Entities.DTOs.PriceDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.Abstract;
@@ -231,6 +229,7 @@ namespace Figaros.Services.Concrete
                 price.ServicePrice = PriceUpdateDto.ServicePrice;
                 price.Service = PriceUpdateDto.Service;
                 price.Description = PriceUpdateDto.Description;
+                price.IsActive = PriceUpdateDto.IsActive;
                 price.ModifiedDate = DateTime.Now;
 
                 var updatedPrice = await _unitOfWork.Prices.UpdateAsync(price);

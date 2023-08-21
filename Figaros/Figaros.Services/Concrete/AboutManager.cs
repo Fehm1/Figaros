@@ -94,6 +94,7 @@ namespace Figaros.Services.Concrete
 
                 about.Title = aboutUpdateDto.Title;
                 about.Description = aboutUpdateDto.Description;
+                about.IsActive = aboutUpdateDto.IsActive;
                 about.ModifiedDate = DateTime.Now;
 
                 var updatedAbout = await _unitOfWork.About.UpdateAsync(about);

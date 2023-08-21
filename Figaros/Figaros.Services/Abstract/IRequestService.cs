@@ -11,6 +11,7 @@ namespace Figaros.Services.Abstract
         Task<IDataResult<RequestListDto>> GetAllByDeleted();
         Task<IDataResult<RequestDto>> Add(RequestPostDto RequestPostDto);
         Task<IDataResult<RequestDto>> Restore(int RequestId);
+        Task<IDataResult<RequestDto>> Readed(int RequestId);
         Task<IDataResult<RequestDto>> Delete(int RequestId);
         Task<IDataResult<RequestDto>> HardDelete(int RequestId);
     }

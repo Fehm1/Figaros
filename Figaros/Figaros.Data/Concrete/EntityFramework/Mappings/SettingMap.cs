@@ -41,6 +41,7 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.TwitterUrl).HasMaxLength(100);
             builder.Property(a => a.TiktokUrl).IsRequired();
             builder.Property(a => a.TiktokUrl).HasMaxLength(100);
+            builder.Property(a => a.IsActiceRequest).HasDefaultValue(true).IsRequired();
 
             builder.Property(a => a.CreatedDate).IsRequired();
             builder.Property(a => a.ModifiedDate).IsRequired();

@@ -19,5 +19,6 @@ namespace Figaros.Entities.Concrete
         public string TwitterUrl { get; set; }
         public string FacebookUrl { get; set; }
         public string TiktokUrl { get; set; }
+        public bool IsActiceRequest { get; set; }
     }
 }

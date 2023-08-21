@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
 using Figaros.Data.Abstract;
 using Figaros.Entities.Concrete;
-using Figaros.Entities.DTOs.AboutDtos;
-using Figaros.Entities.DTOs.BookingDtos;
 using Figaros.Entities.DTOs.EmployeeDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Extentions;
@@ -202,9 +200,9 @@ namespace Figaros.Services.Concrete
             var result = await _unitOfWork.Employees.AnyAsync(c => c.Id == EmployeeId);
             if (result)
             {
-                var booking = await _unitOfWork.Employees.GetAsync(c => c.Id == EmployeeId);
-                EmployeeUpdateDto bookingUpdateDto = _mapper.Map<EmployeeUpdateDto>(booking);
-                return new DataResult<EmployeeUpdateDto>(ResultStatus.Success, bookingUpdateDto);
+                var employee = await _unitOfWork.Employees.GetAsync(c => c.Id == EmployeeId);
+                EmployeeUpdateDto employeeUpdateDto = _mapper.Map<EmployeeUpdateDto>(employee);
+                return new DataResult<EmployeeUpdateDto>(ResultStatus.Success, employeeUpdateDto);
             }
             else
             {
@@ -305,6 +303,7 @@ namespace Figaros.Services.Concrete
                 employee.TiktokUrl = employeeUpdateDto.TiktokUrl;
                 employee.FacebookUrl = employeeUpdateDto.FacebookUrl;
                 employee.WhatsAppUrl = employeeUpdateDto.WhatsAppUrl;
+                employee.IsActive = employeeUpdateDto.IsActive;
                 employee.ModifiedDate = DateTime.Now;
 
                 var updatedEmployee = await _unitOfWork.Employees.UpdateAsync(employee);

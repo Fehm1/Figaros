@@ -235,6 +235,7 @@ namespace Figaros.Services.Concrete
                 booking.Phone = bookingUpdateDto.Phone;
                 booking.Date = bookingUpdateDto.Date;
                 booking.Message = bookingUpdateDto.Message;
+                booking.IsActive = bookingUpdateDto.IsActive;
                 booking.ModifiedDate = DateTime.Now;
 
                 var updatedBooking = await _unitOfWork.Bookings.UpdateAsync(booking);

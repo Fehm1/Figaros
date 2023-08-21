@@ -229,6 +229,7 @@ namespace Figaros.Services.Concrete
             {
                 FAQ.Question = FAQUpdateDto.Question;
                 FAQ.Answer = FAQUpdateDto.Answer;
+                FAQ.IsActive = FAQUpdateDto.IsActive;
                 FAQ.ModifiedDate = DateTime.Now;
 
                 var updatedFAQ = await _unitOfWork.FAQs.UpdateAsync(FAQ);
