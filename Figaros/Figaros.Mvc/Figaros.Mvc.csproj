@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\assets\" />
-    <Folder Include="wwwroot\manage\" />
     <Folder Include="wwwroot\uploads\About\" />
     <Folder Include="wwwroot\uploads\Employees\" />
     <Folder Include="wwwroot\uploads\Images\" />
@@ -19,6 +18,10 @@
     <Folder Include="wwwroot\uploads\Requests\" />
     <Folder Include="wwwroot\uploads\Products\" />
     <Folder Include="wwwroot\uploads\OurSalon\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
 
 </Project>

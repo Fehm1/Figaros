@@ -1,0 +1,160 @@
+﻿<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" asp-area="Manage" asp-controller="dashboard" asp-action="index">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" asp-area="Manage" asp-controller="dashboard" asp-action="index">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Səhifələrin idarə edilməsi
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+           aria-expanded="true" aria-controls="collapseOne">
+            <i class="bi bi-code-slash"></i>
+            <span>İdarəçilər</span>
+        </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" asp-area="manage" asp-controller="Role" asp-action="index">Rollar</a>
+                <a class="collapse-item" asp-area="manage" asp-controller="User" asp-action="index">Adminlər</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+           aria-expanded="true" aria-controls="collapseTwo">
+            <i class="bi bi-person-fill"></i>
+            <span>Komanda</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" asp-area="manage" asp-controller="Profession" asp-action="index">Vəzifələr</a>
+                <a class="collapse-item" asp-area="manage" asp-controller="Employee" asp-action="index">Əməkdaşlar</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+           aria-expanded="true" aria-controls="collapseThree">
+            <i class="bi bi-alarm-fill"></i>
+            <span>Rezervasiyalar</span>
+        </a>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" asp-area="manage" asp-controller="booking" asp-action="index">Rezervasiyalar</a>
+                <a class="collapse-item" asp-area="manage" asp-controller="time" asp-action="index">Rezervasiya üçün vaxtlar</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="oursalon" asp-action="index">
+            <i class="bi bi-shop"></i>
+            <span>Bizim salon</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="about" asp-action="index">
+            <i class="bi bi-journal-text"></i>
+            <span>Haqqımızda</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="image" asp-action="index">
+            <i class="bi bi-images"></i>
+            <span>Şəkillər</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="Slider" asp-action="index">
+            <i class="bi bi-image"></i>
+            <span>Slayder</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="Service" asp-action="index">
+            <i class="fa-sharp fa-solid fa-scissors"></i>
+            <span>Xidmətlər</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="price" asp-action="index">
+            <i class="bi bi-currency-dollar"></i>
+            <span>Qiymətlər</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="product" asp-action="index">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <span>Məhsullar</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="request" asp-action="index">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Müraciətlər</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="price" asp-action="index">
+            <i class="fa-solid fa-heart"></i>
+            <span>Sponsorlar</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="faq" asp-action="index">
+            <i class="fas fa-comments"></i>
+            <span>FAQ</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <li class="nav-item">
+        <a class="nav-link" asp-area="manage" asp-controller="Setting" asp-action="index">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Parametrlər</span>
+        </a>
+    </li>
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->

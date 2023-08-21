@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Figaros.Mvc.props" />
+</Project>
