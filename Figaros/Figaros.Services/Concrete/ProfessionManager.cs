@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Figaros.Data.Abstract;
 using Figaros.Entities.Concrete;
-using Figaros.Entities.DTOs.FAQDtos;
 using Figaros.Entities.DTOs.ProfessionDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.Abstract;
@@ -15,7 +14,7 @@ namespace Figaros.Services.Concrete
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public FAQManager(IUnitOfWork unitOfWork, IMapper mapper)
+        public ProfessionManager(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;

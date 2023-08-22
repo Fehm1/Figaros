@@ -1,0 +1,36 @@
+﻿@model Figaros.Entities.DTOs.ProfessionDtos.ProfessionUpdateDto
+@{
+    ViewBag.Title = "Vəzifə yenilə";
+}
+
+<div>
+    <div>
+        <h1>Vəzifə yenilə:</h1>
+    </div>
+    <div>
+        <form name="profession-form" asp-action="update" method="post">
+            <div class="row">
+
+                <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+                <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+                <input hidden="true" asp-for="Id" />
+
+                <div class="form-group">
+                    <label asp-for="Name">Vəzifə adı:</label>
+                    <input name="Name" class="form-control" asp-for="Name" />
+                    <span class="text-danger" asp-validation-for="Name"></span>
+                </div>
+
+                <div class="form-group form-check col-12">
+                    <input type="checkbox" class="form-check-input" asp-for="IsActive" />
+                    <label asp-for="IsActive" class="form-check-label"></label>
+                    <span class="text-danger" asp-validation-for="IsActive"></span>
+                </div>
+
+            </div>
+            <a asp-controller="profession" asp-action="index" class="btn btn-outline-danger"><span><i class="bi bi-x"></i></span> Geri</a>
+            <button type="submit" class="btn btn-success"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+        </form>
+    </div>
+</div>

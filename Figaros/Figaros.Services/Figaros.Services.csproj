@@ -17,6 +17,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\Figaros.Data\Figaros.Data.csproj" />
 	  <ProjectReference Include="..\Figaros.Entities\Figaros.Entities.csproj" />
+	  <ProjectReference Include="..\Figaros.Shared\Figaros.Shared.csproj" />
 	</ItemGroup>
 
 </Project>
