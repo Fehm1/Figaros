@@ -18,7 +18,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="professionDeletedTable" width="100%" cellspacing="0">
+                <table class="table table-borderless" id="professionDeletedTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>No</th>
@@ -60,6 +60,16 @@
                     "<'row'<'col-sm-12'tr>>" +
                     "<'row'<'col-sm-5'i><'col-sm-7'p>>",
                 buttons: [
+                    {
+                        text: 'Hamısını sil  <i class="fa-solid fa-trash"></i>',
+                        className: 'btn btn-primary',
+                        attr: {
+                            id: "btnProfessionDeleteAll",
+                        },
+                        action: function (e, dt, node, config) {
+                            
+                        }
+                    },
                     {
                         text: 'Yenilə  <i class="bi bi-arrow-counterclockwise"></i>',
                         className: 'btn btn-warning',
@@ -259,6 +269,11 @@
                     "lengthMenu": "Səhifədə _MENU_ nəticə göstər",
                     "searchPlaceholder": "Nəyi axtarırsınız?"
                 }
+            });
+
+            //Delete all
+            $('#btnProfessionDeleteAll').click(function () {
+                window.location.assign('/Manage/Profession/DeleteAll');
             });
 
             //Go index page

@@ -1,0 +1,45 @@
+﻿@model Figaros.Entities.DTOs.AboutDtos.AboutDto
+@{
+    ViewBag.Title = "Haqqımızda";
+}
+
+<div class="container">
+    <div>
+        <h1>Haqqımızda:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <div>
+
+            <div class="row" style="justify-content: center; display: flex">
+
+                <div class="col-lg-5 col-md-12">
+                    <div class="form-group">
+                        <img id="image" style="height: 250px; width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/About/@Model.About.ImageString" />
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="About.Title">Başlıq:</label>
+                        <input readonly class="form-control" asp-for="About.Title" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="About.Description">Açıqlama:</label>
+                        <textarea readonly asp-for="About.Description" class="form-control" rows="3">@Model.About.Description</textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="justify-content: center; display: flex">
+            <a class="btn btn-warning" asp-area="Manage" asp-controller="about" asp-action="update" asp-route-id="1">Yenilə <i class="bi bi-pen-fill"></i></a>
+        </div>
+
+    </div>
+</div>

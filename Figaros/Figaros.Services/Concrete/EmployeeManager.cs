@@ -88,7 +88,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeDto>> Delete(int employeeId)
         {
-            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId);
+            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId, x => x.Profession);
 
             if (employee != null)
             {
@@ -114,7 +114,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeDto>> Get(int employeeId)
         {
-            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId);
+            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId, x => x.Profession);
 
             if (employee != null)
             {
@@ -134,7 +134,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeListDto>> GetAll()
         {
-            var employees = await _unitOfWork.Employees.GetAllAsync();
+            var employees = await _unitOfWork.Employees.GetAllAsync(null, x => x.Profession);
 
             if (employees.Count >= 0)
             {
@@ -155,7 +155,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeListDto>> GetAllByDeleted()
         {
-            var employees = await _unitOfWork.Employees.GetAllAsync(x => x.IsDeleted);
+            var employees = await _unitOfWork.Employees.GetAllAsync(x => x.IsDeleted, x => x.Profession);
 
             if (employees.Count >= 0)
             {
@@ -176,7 +176,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeListDto>> GetAllByNonDeleted()
         {
-            var employees = await _unitOfWork.Employees.GetAllAsync(x => !x.IsDeleted);
+            var employees = await _unitOfWork.Employees.GetAllAsync(x => !x.IsDeleted, x => x.Profession);
 
             if (employees.Count >= 0)
             {
@@ -200,7 +200,7 @@ namespace Figaros.Services.Concrete
             var result = await _unitOfWork.Employees.AnyAsync(c => c.Id == EmployeeId);
             if (result)
             {
-                var employee = await _unitOfWork.Employees.GetAsync(c => c.Id == EmployeeId);
+                var employee = await _unitOfWork.Employees.GetAsync(c => c.Id == EmployeeId, x => x.Profession);
                 EmployeeUpdateDto employeeUpdateDto = _mapper.Map<EmployeeUpdateDto>(employee);
                 return new DataResult<EmployeeUpdateDto>(ResultStatus.Success, employeeUpdateDto);
             }
@@ -212,7 +212,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeDto>> HardDelete(int employeeId)
         {
-            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId);
+            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId, x => x.Profession);
 
             if (employee != null)
             {
@@ -238,7 +238,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeDto>> Restore(int employeeId)
         {
-            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId);
+            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeId, x => x.Profession);
 
             if (employee != null)
             {
@@ -264,7 +264,7 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<EmployeeDto>> Update(EmployeeUpdateDto employeeUpdateDto)
         {
-            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeUpdateDto.Id);
+            var employee = await _unitOfWork.Employees.GetAsync(x => x.Id == employeeUpdateDto.Id, x => x.Profession);
 
             if (employee != null)
             {

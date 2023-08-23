@@ -66,48 +66,6 @@ namespace Figaros.Services.Concrete
             });
         }
 
-        public async Task<IDataResult<OurSalonListDto>> GetAllByDeleted()
-        {
-            var ourSalons = await _unitOfWork.OurSalon.GetAllAsync(x => x.IsDeleted);
-
-            if (ourSalons.Count >= 0)
-            {
-                return new DataResult<OurSalonListDto>(ResultStatus.Success, new OurSalonListDto
-                {
-                    OurSalons = ourSalons,
-                    ResultStatus = ResultStatus.Success
-                });
-            }
-
-            return new DataResult<OurSalonListDto>(ResultStatus.Error, "Məlumatlar tapılmadı!", new OurSalonListDto
-            {
-                OurSalons = null,
-                ResultStatus = ResultStatus.Error,
-                Message = "Məlumatlar tapılmadı!"
-            });
-        }
-
-        public async Task<IDataResult<OurSalonListDto>> GetAllByNonDeleted()
-        {
-            var ourSalons = await _unitOfWork.OurSalon.GetAllAsync(x => !x.IsDeleted);
-
-            if (ourSalons.Count >= 0)
-            {
-                return new DataResult<OurSalonListDto>(ResultStatus.Success, new OurSalonListDto
-                {
-                    OurSalons = ourSalons,
-                    ResultStatus = ResultStatus.Success
-                });
-            }
-
-            return new DataResult<OurSalonListDto>(ResultStatus.Error, "Məlumatlar tapılmadı!", new OurSalonListDto
-            {
-                OurSalons = null,
-                ResultStatus = ResultStatus.Error,
-                Message = "Məlumatlar tapılmadı!"
-            });
-        }
-
         public async Task<IDataResult<OurSalonUpdateDto>> GetUpdateDto(int OurSalonId)
         {
             var result = await _unitOfWork.OurSalon.AnyAsync(c => c.Id == OurSalonId);
@@ -154,7 +112,7 @@ namespace Figaros.Services.Concrete
                     string newImage = OurSalonUpdateDto.ImageFile.SaveImage(_env.WebRootPath, "uploads/OurSalon");
                     OurSalonUpdateDto.ImageString.DeleteImage(_env.WebRootPath, "uploads/OurSalon");
 
-                    OurSalonUpdateDto.ImageString = newImage;
+                    ourSalon.ImageString = newImage;
                 }
 
                 ourSalon.Title = OurSalonUpdateDto.Title;

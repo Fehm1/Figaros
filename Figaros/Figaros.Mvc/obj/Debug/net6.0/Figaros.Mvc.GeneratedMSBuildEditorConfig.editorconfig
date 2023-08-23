@@ -16,8 +16,40 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Mvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFib3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/About/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEFib3V0XFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Employee/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Employee/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXERlbGV0ZWRUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Employee/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/OurSalon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE91clNhbG9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/OurSalon/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE91clNhbG9uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Profession/Add.cshtml]

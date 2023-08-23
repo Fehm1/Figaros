@@ -7437,6 +7437,38 @@
       "PackagePath": "staticwebassets\\manage\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\About\\81555df7-658e-4755-8782-dfaff2b907c3Space.jpg",
+      "PackagePath": "staticwebassets\\uploads\\About\\81555df7-658e-4755-8782-dfaff2b907c3Space.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\20645464-f520-4a68-bfa9-647f16bc9f62Space.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Employees\\20645464-f520-4a68-bfa9-647f16bc9f62Space.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\28cff48c-fce1-40ca-91f0-389716624a14WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Employees\\28cff48c-fce1-40ca-91f0-389716624a14WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\59474476-19f5-4c60-9b76-ceb0647da50dSpace.jpg",
+      "PackagePath": "staticwebassets\\uploads\\OurSalon\\59474476-19f5-4c60-9b76-ceb0647da50dSpace.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\a89d1c7a-e743-4edf-9693-3f168b56820aWhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\OurSalon\\a89d1c7a-e743-4edf-9693-3f168b56820aWhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\af6fc41f-bb20-44a3-9816-76177d868ca0WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\OurSalon\\af6fc41f-bb20-44a3-9816-76177d868ca0WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\img2.png",
+      "PackagePath": "staticwebassets\\uploads\\OurSalon\\img2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\img3.png",
+      "PackagePath": "staticwebassets\\uploads\\OurSalon\\img3.png"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Figaros.Mvc.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

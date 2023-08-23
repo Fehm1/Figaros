@@ -116,5 +116,28 @@ namespace Figaros.Mvc.Areas.Manage.Controllers
                 return NotFound();
             }
         }
+
+        public async Task<IActionResult> DeleteAll()
+        {
+            var professions = await _professionService.GetAllByDeleted();
+
+            if (professions.ResultStatus == ResultStatus.Success)
+            {
+                foreach (var profession in professions.Data.Professions)
+                {
+                    var result = await _professionService.HardDelete(profession.Id);
+                    if (result.ResultStatus != ResultStatus.Success)
+                    {
+                        return NotFound();
+                    }
+                }
+
+                return Ok();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
     }
 }
