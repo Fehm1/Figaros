@@ -1,0 +1,75 @@
+﻿@model Figaros.Entities.DTOs.ServiceDtos.ServicePostDto
+@{
+    ViewBag.Title = "Xidmət əlavə et";
+}
+
+<div class="container">
+    <div>
+        <h1>Xidmət əlavə et:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="Add" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <img id="image" style="height: 250px; width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/Services/base.jpg" />
+                            <input readonly id="input" style="display: block; margin-left: auto; margin-right: auto;" asp-for="ImageFile" />
+                            <span class="text-danger" asp-validation-for="ImageFile"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+
+                        <div class="form-group">
+                            <label asp-for="Title">Başlıq:</label>
+                            <input class="form-control" asp-for="Title" />
+                            <span class="text-danger" asp-validation-for="Title"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Description">Açıqlama:</label>
+                            <textarea asp-for="Description" class="form-control" rows="2">@Model.Description</textarea>
+                            <span class="text-danger" asp-validation-for="Description"></span>
+                        </div>
+
+                        <div class="form-group form-check col-12">
+                            <input type="checkbox" class="form-check-input" asp-for="IsPoster" />
+                            <label asp-for="IsPoster" class="form-check-label">Posterdir?</label>
+                            <span class="text-danger" asp-validation-for="IsPoster"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; display: flex">
+                <a asp-controller="service" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span>Geri</a>
+                <button type="submit" class="btn btn-success mx-1"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        const image = document.getElementById('image')
+        const input = document.getElementById('input');
+
+        input.onchange = evt => {
+            const [file] = input.files
+            if (file) {
+                image.src = URL.createObjectURL(file)
+            }
+        }
+    </script>
+}

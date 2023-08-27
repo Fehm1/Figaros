@@ -298,8 +298,6 @@ namespace Figaros.Services.Concrete
 
                 slider.Title = SliderUpdateDto.Title;
                 slider.Description = SliderUpdateDto.Description;
-                slider.InstagramUrl = SliderUpdateDto.InstagramUrl;
-                slider.WhatsAppUrl = SliderUpdateDto.WhatsAppUrl;
                 slider.RedirectUrl = SliderUpdateDto.RedirectUrl;
                 slider.IsActive = SliderUpdateDto.IsActive;
                 slider.ModifiedDate = DateTime.Now;

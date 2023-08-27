@@ -1,0 +1,57 @@
+﻿@model Figaros.Entities.DTOs.ImageDtos.ImageUpdateDto
+@{
+    ViewBag.Title = "Şəkil yenilə";
+}
+
+<div class="container">
+    <div>
+        <h1>Şəkil yenilə:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="Update" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <input hidden="true" asp-for="Id" />
+            <input hidden="true" asp-for="ImageString" />
+
+            <div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <img id="image" class="img-responsive" style="height: 300px; border-radius: 5px; display: block; margin-left: auto; margin-right: auto; object-fit: cover;" src="~/uploads/Images/@Model.ImageString" />
+                            <input readonly id="input" style="display: block; margin-left: auto; margin-right: auto;" asp-for="ImageFile" />
+                            <span class="text-danger" asp-validation-for="ImageFile"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; display: flex">
+                <a asp-controller="image" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span>Geri</a>
+                <button type="submit" class="btn btn-success mx-1"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        const image = document.getElementById('image')
+        const input = document.getElementById('input');
+
+        input.onchange = evt => {
+            const [file] = input.files
+            if (file) {
+                image.src = URL.createObjectURL(file)
+            }
+        }
+    </script>
+}

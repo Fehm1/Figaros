@@ -1,0 +1,29 @@
+﻿@model Figaros.Entities.DTOs.ImageDtos.ImageListDto
+@{
+    ViewBag.Title = "Şəkillər";
+}
+
+<div class="container">
+    <div>
+        <h1>Şəkillər:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <div>
+
+            <div class="row" style="justify-content: center; display: flex">
+
+                @foreach (var image in Model.Images)
+                {
+                    <div class="col-lg-4 col-md-12">
+                        <a asp-area="Manage" asp-controller="image" asp-action="update" asp-route-id="@image.Id">
+                            <img id="image" class="my-2" style="height: 250px; width: 100%; border-radius: 5px; display: block; margin-left: auto; margin-right: auto; object-fit: cover;" src="~/uploads/Images/@image.ImageString" />
+                        </a>
+                    </div>
+                }
+
+            </div>
+
+        </div>
+    </div>
+</div>

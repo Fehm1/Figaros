@@ -7449,6 +7449,38 @@
       "PackagePath": "staticwebassets\\uploads\\Employees\\28cff48c-fce1-40ca-91f0-389716624a14WhatsApp Image 2023-02-05 at 18.46.10.jpg"
     },
     {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\539abdf6-9753-4c31-b92b-2d174fe699c5WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Employees\\539abdf6-9753-4c31-b92b-2d174fe699c5WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\base.png",
+      "PackagePath": "staticwebassets\\uploads\\Employees\\base.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Images\\edf9a2ef-11af-4434-817d-857d1e7be900img1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Images\\edf9a2ef-11af-4434-817d-857d1e7be900img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Images\\img2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Images\\img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Images\\img3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Images\\img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Images\\img4.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Images\\img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Images\\img5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Images\\img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Images\\img6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Images\\img6.jpg"
+    },
+    {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\59474476-19f5-4c60-9b76-ceb0647da50dSpace.jpg",
       "PackagePath": "staticwebassets\\uploads\\OurSalon\\59474476-19f5-4c60-9b76-ceb0647da50dSpace.jpg"
     },
@@ -7467,6 +7499,26 @@
     {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\OurSalon\\img3.png",
       "PackagePath": "staticwebassets\\uploads\\OurSalon\\img3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Services\\49798822-a52f-4ccd-aad0-4b39ad023cf2img5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Services\\49798822-a52f-4ccd-aad0-4b39ad023cf2img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Services\\ab2a0eb6-9c9b-441b-9534-e33cae2c03c6img8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Services\\ab2a0eb6-9c9b-441b-9534-e33cae2c03c6img8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Services\\base.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Services\\base.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Sliders\\base.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Sliders\\base.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Sliders\\cb4307c9-9f9f-45f2-b087-d60f7c3e2fe3img3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Sliders\\cb4307c9-9f9f-45f2-b087-d60f7c3e2fe3img3.jpg"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Figaros.Mvc.Microsoft.AspNetCore.StaticWebAssets.props",

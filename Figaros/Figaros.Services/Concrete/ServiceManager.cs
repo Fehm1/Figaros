@@ -290,8 +290,8 @@ namespace Figaros.Services.Concrete
                         });
                     }
 
-                    string newImage = ServiceUpdateDto.ImageFile.SaveImage(_env.WebRootPath, "uploads/Employees");
-                    service.ImageString.DeleteImage(_env.WebRootPath, "uploads/Employees");
+                    string newImage = ServiceUpdateDto.ImageFile.SaveImage(_env.WebRootPath, "uploads/Services");
+                    service.ImageString.DeleteImage(_env.WebRootPath, "uploads/Services");
 
                     service.ImageString = newImage;
                 }

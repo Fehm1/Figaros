@@ -1,0 +1,318 @@
+﻿@using Figaros.Shared.Utilities.Results.ComplexTypes;
+@model Figaros.Entities.DTOs.ServiceDtos.ServiceListDto
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Xidmətlər";
+    int count = 0;
+}
+
+@if (Model.ResultStatus == ResultStatus.Success)
+{
+    <div id="modalPlaceHolder" aria-hidden="true"></div>
+
+    <div class="card shadow mb-12">
+        <div class="card-header py-3">
+
+            <div class="row align-items-center">
+                <h3>Xidmətlər</h3>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-borderless" id="teamTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Şəkil</th>
+                            <th>Başlıq</th>
+                            <th>Açıqlama</th>
+                            <th>Yaranma tarixi</th>
+                            <th>Yenilənmə tarixi</th>
+                            <th>Əməliyyatlar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var service in Model.Services)
+                        {
+                            if (service.IsActive)
+                            {
+                                <tr>
+                                    <th scope="row">@(++count)</th>
+                                    <td><img src="~/uploads/services/@service.ImageString" alt="@service.Title" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover" /></td>
+                                    <td>@service.Title</td>
+                                    <td>@service.Description</td>
+                                    <td>@service.CreatedDate.ToShortDateString()</td>
+                                    <td>@service.ModifiedDate.ToShortDateString()</td>
+                                    <td style="text-align:center">
+                                        <a class="btn btn-warning" asp-area="Manage" asp-controller="service" asp-action="update" asp-route-id="@service.Id"><i class="bi bi-pen-fill"></i></a>
+                                        <a class="btn btn-danger deleteButton" asp-area="Manage" asp-controller="service" asp-action="Delete" asp-route-id="@service.Id"><i class="bi bi-trash-fill"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                            else
+                            {
+                                <tr style="background-color: #ffd0d0;">
+                                    <th scope="row">@(++count)</th>
+                                    <td><img src="~/uploads/services/@service.ImageString" alt="@service.Title" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover" /></td>
+                                    <td>@service.Title</td>
+                                    <td>@service.Description</td>
+                                    <td>@service.CreatedDate.ToShortDateString()</td>
+                                    <td>@service.ModifiedDate.ToShortDateString()</td>
+                                    <td style="text-align:center">
+                                        <a class="btn btn-warning" asp-area="Manage" asp-controller="service" asp-action="update" asp-route-id="@service.Id"><i class="bi bi-pen-fill"></i></a>
+                                        <a class="btn btn-danger deleteButton" asp-area="Manage" asp-controller="service" asp-action="Delete" asp-route-id="@service.Id"><i class="bi bi-trash-fill"></i></a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+@if (Model.ResultStatus == ResultStatus.Error)
+{
+    <div class="alert alert-danger">
+        @Model.Message
+        <br>
+        Dashboard səhifəsinə qayıtmaq üçün <a class="alert-link" asp-area="Manage" asp-controller="Dashboard" asp-action="index">klikləyin.</a>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            const dataTable = $('#teamTable').DataTable({
+                dom:
+                    "<'row'<'col-sm-3'l><'col-sm-6 text-center'B><'col-sm-3'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+                buttons: [
+                    {
+                        text: 'Əlavə et  <i class="bi bi-plus-circle"></i>',
+                        className: 'btn btn-success',
+                        attr: {
+                            id: "btnServiceAdd",
+                        },
+                        action: function (e, dt, node, config) {
+
+                        }
+                    },
+                    {
+                        text: 'Yenilə  <i class="bi bi-arrow-counterclockwise"></i>',
+                        className: 'btn btn-warning',
+                        action: function (e, dt, node, config) {
+                            window.location.reload(true);
+                        }
+                    },
+                    {
+                        text: 'Silinənlər  <i class="bi bi-trash-fill"></i>',
+                        className: 'btn btn-danger',
+                        attr: {
+                            id: "btnServiceDeletedTable",
+                        },
+                        action: function (e, dt, node, config) {
+
+                        }
+                    }
+                ],
+                language: {
+                    "emptyTable": "Cədvəldə heç bir məlumat yoxdur",
+                    "infoEmpty": "Nəticə Yoxdur",
+                    "infoFiltered": "( _MAX_ Nəticə İçindən Tapılanlar)",
+                    "loadingRecords": "Yüklənir...",
+                    "processing": "Gözləyin...",
+                    "search": "Axtarış:",
+                    "zeroRecords": "Nəticə Tapılmadı.",
+                    "paginate": {
+                        "first": "İlk",
+                        "last": "Axırıncı",
+                        "previous": "Öncəki",
+                        "next": "Sonrakı"
+                    },
+                    "aria": {
+                        "sortDescending": ": sütunu azalma sırası üzərə aktiv etmək",
+                        "sortAscending": ": sütunu artma sırası üzərə aktiv etmək"
+                    },
+                    "autoFill": {
+                        "fill": "Bütün hücrələri <i>%d<\/i> ile doldur",
+                        "fillHorizontal": "Hücrələri üfiqi olaraq doldur",
+                        "fillVertical": "Hücrələri şaquli olara1 doldur",
+                        "cancel": "Ləğv et"
+                    },
+                    "buttons": {
+                        "collection": "Kolleksiya <span class=\"\\\"><\/span>",
+                        "colvis": "Sütun baxışı",
+                        "colvisRestore": "Baxışı əvvəlki vəziyyətinə gətir",
+                        "copy": "Kopyala",
+                        "copyKeys": "Cədvəldəki qeydi kopyalamaq üçün CTRL və ya u2318 + C düymələrinə basın. Ləğv etmək üçün bu mesajı vurun və ya ESC düyməsini vurun.",
+                        "copySuccess": {
+                            "1": "1 sətir panoya kopyalandı",
+                            "_": "%ds sətir panoya kopyalandı"
+                        },
+                        "copyTitle": "Panoya kopyala",
+                        "csv": "CSV",
+                        "excel": "Excel",
+                        "pageLength": {
+                            "-1": "Bütün sətirlari göstər",
+                            "_": "%d sətir göstər"
+                        },
+                        "pdf": "PDF",
+                        "print": "Çap Et"
+                    },
+                    "decimal": ",",
+                    "info": "_TOTAL_ Nəticədən _START_ - _END_ Arası Nəticələr",
+                    "infoThousands": ".",
+                    "searchBuilder": {
+                        "add": "Koşul Ekle",
+                        "button": {
+                            "0": "Axtarış Yaradıcı",
+                            "_": "Axtarış Yaradıcı (%d)"
+                        },
+                        "clearAll": "Filtrləri Təmizlə",
+                        "condition": "Şərt",
+                        "conditions": {
+                            "date": {
+                                "after": "Növbəti",
+                                "before": "Öncəki",
+                                "between": "Arasında",
+                                "empty": "Boş",
+                                "equals": "Bərabərdir",
+                                "not": "Deyildir",
+                                "notBetween": "Xaricində",
+                                "notEmpty": "Dolu"
+                            },
+                            "number": {
+                                "between": "Arasında",
+                                "empty": "Boş",
+                                "equals": "Bərabərdir",
+                                "gt": "Böyükdür",
+                                "gte": "Böyük bərabərdir",
+                                "lt": "Kiçikdir",
+                                "lte": "Kiçik bərabərdir",
+                                "not": "Deyildir",
+                                "notBetween": "Xaricində",
+                                "notEmpty": "Dolu"
+                            },
+                            "string": {
+                                "contains": "Tərkibində",
+                                "empty": "Boş",
+                                "endsWith": "İlə bitər",
+                                "equals": "Bərabərdir",
+                                "not": "Deyildir",
+                                "notEmpty": "Dolu",
+                                "startsWith": "İlə başlayar"
+                            },
+                            "array": {
+                                "equals": "Bərabərdir",
+                                "empty": "Boş",
+                                "contains": "Tərkibində",
+                                "not": "Deyildir",
+                                "notEmpty": "Dolu",
+                                "without": "Xaric"
+                            }
+                        },
+                        "data": "Qeyd",
+                        "deleteTitle": "Filtrləmə qaydasını silin",
+                        "leftTitle": "Meyarı xaricə çıxarmaq",
+                        "logicAnd": "və",
+                        "logicOr": "vəya",
+                        "rightTitle": "Meyarı içəri al",
+                        "title": {
+                            "0": "Axtarış Yaradıcı",
+                            "_": "Axtarış Yaradıcı (%d)"
+                        },
+                        "value": "Değer"
+                    },
+                    "searchPanes": {
+                        "clearMessage": "Hamısını Təmizlə",
+                        "collapse": {
+                            "0": "Axtarış Bölməsi",
+                            "_": "Axtarış Bölməsi (%d)"
+                        },
+                        "count": "{total}",
+                        "countFiltered": "{shown}\/{total}",
+                        "emptyPanes": "Axtarış Bölməsi yoxdur",
+                        "loadMessage": "Axtarış Bölməsi yüklənir ...",
+                        "title": "Aktiv filtrlər - %d"
+                    },
+                    "select": {
+                        "cells": {
+                            "1": "1 hücrə seçildi",
+                            "_": "%d hücrə seçildi"
+                        },
+                        "columns": {
+                            "1": "1 sütun seçildi",
+                            "_": "%d sütun seçildi"
+                        },
+                        "rows": {
+                            "1": "1 qeyd seçildi",
+                            "_": "%d qeyd seçildi"
+                        }
+                    },
+                    "thousands": ".",
+                    "datetime": {
+                        "previous": "Öncəki",
+                        "next": "Növbəti",
+                        "hours": "Saat",
+                        "minutes": "Dəqiqə",
+                        "seconds": "Saniyə",
+                        "unknown": "Naməlum",
+                        "amPm": [
+                            "am",
+                            "pm"
+                        ]
+                    },
+                    "editor": {
+                        "close": "Bağla",
+                        "create": {
+                            "button": "Təzə",
+                            "title": "Yeni qeyd yarat",
+                            "submit": "Qeyd Et"
+                        },
+                        "edit": {
+                            "button": "Redaktə Et",
+                            "title": "Qeydi Redaktə Et",
+                            "submit": "Yeniləyin"
+                        },
+                        "remove": {
+                            "button": "Sil",
+                            "title": "Qeydləri sil",
+                            "submit": "Sil",
+                            "confirm": {
+                                "_": "%d ədəd qeydi silmək istədiyinizə əminsiniz?",
+                                "1": "Bu qeydi silmək istədiyinizə əminsiniz?"
+                            }
+                        },
+                        "error": {
+                            "system": "Sistem xətası baş verdi (Ətraflı Məlumat)"
+                        },
+                        "multi": {
+                            "title": "Çox dəyər",
+                            "info": "Seçilmiş qeydlər bu sahədə fərqli dəyərlər ehtiva edir. Bütün seçilmiş qeydlər üçün bu sahəyə eyni dəyəri təyin etmək üçün buraya vurun; əks halda hər qeyd öz dəyərini saxlayacaqdır.",
+                            "restore": "Dəyişiklikləri geri qaytarın",
+                            "noMulti": "Bu sahə qrup şəklində deyil, ayrı-ayrılıqda təşkil edilə bilər."
+                        }
+                    },
+                    "lengthMenu": "Səhifədə _MENU_ nəticə göstər",
+                    "searchPlaceholder": "Nəyi axtarırsınız?"
+                }
+            });
+
+            //Add
+            $('#btnServiceAdd').click(function () {
+                window.location.assign('/Manage/Service/Add');
+            });
+
+            //Deleted table
+            $('#btnServiceDeletedTable').click(function () {
+                window.location.assign('/Manage/Service/DeletedTable');
+            });
+
+        });
+    </script>
+}

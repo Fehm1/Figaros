@@ -26,16 +26,6 @@ namespace Figaros.Entities.DTOs.SliderDtos
         [MaxLength(500, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
         public string Description { get; set; }
 
-        [DisplayName("İnstagram")]
-        [Required(ErrorMessage = "{0} daxil edin!")]
-        [MaxLength(100, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
-        public string InstagramUrl { get; set; }
-
-        [DisplayName("WhatsApp")]
-        [Required(ErrorMessage = "{0} daxil edin!")]
-        [MaxLength(100, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
-        public string WhatsAppUrl { get; set; }
-
         [DisplayName("Yönləndirmə linki")]
         [Required(ErrorMessage = "{0} daxil edin!")]
         [MaxLength(100, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]

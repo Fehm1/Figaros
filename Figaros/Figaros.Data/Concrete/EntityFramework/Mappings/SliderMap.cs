@@ -17,10 +17,6 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.Property(a => a.Title).HasMaxLength(150);
             builder.Property(a => a.Description).IsRequired();
             builder.Property(a => a.Description).HasMaxLength(500);
-            builder.Property(a => a.InstagramUrl).IsRequired();
-            builder.Property(a => a.InstagramUrl).HasMaxLength(100);
-            builder.Property(a => a.WhatsAppUrl).IsRequired();
-            builder.Property(a => a.WhatsAppUrl).HasMaxLength(100);
             builder.Property(a => a.RedirectUrl).IsRequired();
             builder.Property(a => a.RedirectUrl).HasMaxLength(100);
 
