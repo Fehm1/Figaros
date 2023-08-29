@@ -1,0 +1,77 @@
+﻿@model Figaros.Entities.DTOs.SponsorDtos.SponsorUpdateDto
+@{
+    ViewBag.Title = "Sponsor yenilə";
+}
+
+<div class="container">
+    <div>
+        <h1>Sponsor yenilə:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="update" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <input hidden="true" asp-for="Id" />
+            <input hidden="true" asp-for="CompanyImageString" />
+
+            <div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-12">
+                        <div class="form-group">
+                            <img id="image" class="img-responsive" style="height: 200px; border-radius: 5px; display: block; margin-left: auto; margin-right: auto; object-fit: cover;" src="~/uploads/Sponsors/@Model.CompanyImageString" />
+                            <input id="input" style="display: block; margin-left: auto; margin-right: auto;" asp-for="CompanyImageFile" />
+                            <span class="text-danger" asp-validation-for="CompanyImageFile"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="CompanyName">Şirkət adı:</label>
+                            <input class="form-control" asp-for="CompanyName" />
+                            <span class="text-danger" asp-validation-for="CompanyName"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="justify-content: center; display: flex">
+                    <div class="form-group form-check col-lg-5 col-md-12">
+                        <input type="checkbox" class="form-check-input" asp-for="IsActive" />
+                        <label asp-for="IsActive" class="form-check-label">Aktivdir?</label>
+                        <span class="text-danger" asp-validation-for="IsActive"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; display: flex">
+                <a asp-controller="sponsor" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span>Geri</a>
+                <button type="submit" class="btn btn-success mx-1"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        const image = document.getElementById('image')
+        const input = document.getElementById('input');
+
+        input.onchange = evt => {
+            const [file] = input.files
+            if (file) {
+                image.src = URL.createObjectURL(file)
+            }
+        }
+    </script>
+}

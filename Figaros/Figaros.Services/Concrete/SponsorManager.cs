@@ -297,7 +297,7 @@ namespace Figaros.Services.Concrete
                     sponsor.CompanyImageString = newImage;
                 }
 
-                
+                sponsor.CompanyName = SponsorUpdateDto.CompanyName;
                 sponsor.IsActive = SponsorUpdateDto.IsActive;
                 sponsor.ModifiedDate = DateTime.Now;
 

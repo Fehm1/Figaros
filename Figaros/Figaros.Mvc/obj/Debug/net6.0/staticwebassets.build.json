@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IdSuS0l5YSOUKzj1VrIdurMOL7Ru0jaVXt0V1Q2fEpk=",
+  "Hash": "96SiFQYogkKIlid2n6juLMQhR0ybc5/CDKQe6exAL88=",
   "Source": "Figaros.Mvc",
   "BasePath": "_content/Figaros.Mvc",
   "Mode": "Default",
@@ -31909,6 +31909,40 @@
       "OriginalItemSpec": "wwwroot\\uploads\\OurSalon\\img3.png"
     },
     {
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Products\\base.png",
+      "SourceId": "Figaros.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
+      "BasePath": "_content/Figaros.Mvc",
+      "RelativePath": "uploads/Products/base.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Products\\base.png"
+    },
+    {
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Products\\d13dfc95-a3ee-46d9-9d91-750e4421ee8aimg1.jpg",
+      "SourceId": "Figaros.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
+      "BasePath": "_content/Figaros.Mvc",
+      "RelativePath": "uploads/Products/d13dfc95-a3ee-46d9-9d91-750e4421ee8aimg1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Products\\d13dfc95-a3ee-46d9-9d91-750e4421ee8aimg1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Services\\49798822-a52f-4ccd-aad0-4b39ad023cf2img5.jpg",
       "SourceId": "Figaros.Mvc",
       "SourceType": "Discovered",
@@ -31992,6 +32026,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Sliders\\cb4307c9-9f9f-45f2-b087-d60f7c3e2fe3img3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Sponsors\\00011036-d645-4e25-8869-9990b4f233bcimg4.jpg",
+      "SourceId": "Figaros.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
+      "BasePath": "_content/Figaros.Mvc",
+      "RelativePath": "uploads/Sponsors/00011036-d645-4e25-8869-9990b4f233bcimg4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Sponsors\\00011036-d645-4e25-8869-9990b4f233bcimg4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Sponsors\\base.jpg",
+      "SourceId": "Figaros.Mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
+      "BasePath": "_content/Figaros.Mvc",
+      "RelativePath": "uploads/Sponsors/base.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Sponsors\\base.jpg"
     }
   ]
 }

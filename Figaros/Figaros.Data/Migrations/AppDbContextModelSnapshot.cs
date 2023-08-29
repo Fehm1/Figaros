@@ -893,6 +893,11 @@ namespace Figaros.Data.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
                     b.Property<string>("CreatedByName")
                         .IsRequired()
                         .HasMaxLength(150)

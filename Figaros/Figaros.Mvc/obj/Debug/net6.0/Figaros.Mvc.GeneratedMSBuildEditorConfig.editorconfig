@@ -44,6 +44,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEVtcGxveWVlXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/FAQ/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZBUVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/FAQ/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZBUVxEZWxldGVkVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/FAQ/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZBUVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/FAQ/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEZBUVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Image/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEltYWdlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +76,42 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE91clNhbG9uXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Price/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByaWNlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Price/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByaWNlXERlbGV0ZWRUYWJsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Price/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByaWNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Price/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByaWNlXFVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Product/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2R1Y3RcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Product/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2R1Y3RcRGVsZXRlZFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2R1Y3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Product/Info.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2R1Y3RcSW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Product/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2R1Y3RcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Profession/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2Zlc3Npb25cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -74,6 +126,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Profession/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByb2Zlc3Npb25cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Request/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFJlcXVlc3RcRGVsZXRlZFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Request/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFJlcXVlc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Service/Add.cshtml]
@@ -122,6 +182,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Slider/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNsaWRlclxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Sponsor/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNwb25zb3JcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Sponsor/DeletedTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNwb25zb3JcRGVsZXRlZFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Sponsor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNwb25zb3JcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Sponsor/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNwb25zb3JcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/_ViewImports.cshtml]

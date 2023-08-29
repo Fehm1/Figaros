@@ -1,0 +1,118 @@
+﻿@model Figaros.Entities.DTOs.ProductDtos.ProductUpdateDto
+@{
+    ViewBag.Title = "Məhsul yenilə";
+}
+
+<div class="container">
+    <div>
+        <h1>Məhsul yenilə:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="update" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <input hidden="true" asp-for="Id" />
+            <input hidden="true" asp-for="ImageString" />
+
+            <div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <img id="image" style="height: 250px; width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/Products/@Model.ImageString" />
+                            <input id="input" style="display: block; margin-left: auto; margin-right: auto;" asp-for="ImageFile" />
+                            <span class="text-danger" asp-validation-for="ImageFile"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+
+                        <div class="form-group">
+                            <label asp-for="Title">Məhsulun adı:</label>
+                            <input class="form-control" asp-for="Title" />
+                            <span class="text-danger" asp-validation-for="Title"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Description">Açıqlama:</label>
+                            <textarea asp-for="Description" class="form-control" rows="2">@Model.Description</textarea>
+                            <span class="text-danger" asp-validation-for="Description"></span>
+                        </div>
+
+                        <div class="row" style="justify-content: center; display: flex">
+
+                            <div class="form-group col-lg-3 col-md-12">
+                                <label asp-for="CostPrice">Alış qiymət:</label>
+                                <input class="form-control" asp-for="CostPrice" />
+                                <span class="text-danger" asp-validation-for="CostPrice"></span>
+                            </div>
+
+                            <div class="form-group col-lg-3 col-md-12">
+                                <label asp-for="SalePrice">Satış qiymət:</label>
+                                <input class="form-control" asp-for="SalePrice" />
+                                <span class="text-danger" asp-validation-for="SalePrice"></span>
+                            </div>
+
+                            <div class="form-group col-lg-3 col-md-12">
+                                <label asp-for="DiscountPercent">Endirim faizi:</label>
+                                <input class="form-control" asp-for="DiscountPercent" />
+                                <span class="text-danger" asp-validation-for="DiscountPercent"></span>
+                            </div>
+
+                            <div class="form-group col-lg-3 col-md-12">
+                                <label asp-for="ProductAmount">Məhsul sayı:</label>
+                                <input class="form-control" asp-for="ProductAmount" />
+                                <span class="text-danger" asp-validation-for="ProductAmount"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group form-check" style="display: block">
+                            <input type="checkbox" class="form-check-input" asp-for="IsNew" />
+                            <label asp-for="IsNew" class="form-check-label"></label>
+                            <span class="text-danger" asp-validation-for="IsNew"></span>
+                        </div>
+
+                        <div class="form-group form-check" style="display: block">
+                            <input type="checkbox" class="form-check-input" asp-for="IsPopular" />
+                            <label asp-for="IsPopular" class="form-check-label"></label>
+                            <span class="text-danger" asp-validation-for="IsPopular"></span>
+                        </div>
+
+                        <div class="form-group form-check" style="display: block">
+                            <input type="checkbox" class="form-check-input" asp-for="IsActive" />
+                            <label asp-for="IsActive" class="form-check-label"></label>
+                            <span class="text-danger" asp-validation-for="IsActive"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; display: flex">
+                <a asp-controller="product" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span>Geri</a>
+                <button type="submit" class="btn btn-success mx-1"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        const image = document.getElementById('image')
+        const input = document.getElementById('input');
+
+        input.onchange = evt => {
+            const [file] = input.files
+            if (file) {
+                image.src = URL.createObjectURL(file)
+            }
+        }
+    </script>
+}

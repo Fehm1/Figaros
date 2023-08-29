@@ -59,7 +59,7 @@ namespace Figaros.Services.AutoMapper
             CreateMap<Product, ProductDto>();
             CreateMap<ProductPostDto, Product>();
             CreateMap<ProductUpdateDto, Product>();
-            CreateMap<Product, PriceUpdateDto>();
+            CreateMap<Product, ProductUpdateDto>();
 
             CreateMap<Profession, ProfessionDto>();
             CreateMap<ProfessionPostDto, Profession>();

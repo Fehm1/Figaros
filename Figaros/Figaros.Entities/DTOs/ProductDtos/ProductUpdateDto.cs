@@ -38,18 +38,13 @@ namespace Figaros.Entities.DTOs.ProductDtos
 
         [DisplayName("Endirim faizi")]
         [Required(ErrorMessage = "{0} daxil edin!")]
-        [Range(0, double.MaxValue)]
+        [Range(0, 100)]
         public double DiscountPercent { get; set; }
 
         [DisplayName("Məhsul sayı")]
         [Required(ErrorMessage = "{0} daxil edin!")]
         [Range(0, int.MaxValue)]
         public int ProductAmount { get; set; }
-
-        [DisplayName("Satış sayı")]
-        [Required(ErrorMessage = "{0} daxil edin!")]
-        [Range(0, int.MaxValue)]
-        public int SaleCount { get; set; }
 
         [DisplayName("Yenidir?")]
         public bool IsNew { get; set; }

@@ -1,0 +1,101 @@
+﻿@model Figaros.Entities.DTOs.ProductDtos.ProductDto
+@{
+    ViewBag.Title = "Məhsul haqqında";
+}
+
+<div class="container">
+    <div>
+        <h1>Məhsul haqqında:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <div>
+
+            <div class="row" style="justify-content: center; display: flex">
+
+                <div class="col-lg-5 col-md-12">
+                    <div class="form-group">
+                        <img id="image" style="height: 250px; width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/Products/@Model.Product.ImageString" />
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Product.Title" style="font-weight: bold">Məhsulun adı:</label>
+                        <p>@Model.Product.Title</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Product.Description" style="font-weight: bold">Açıqlama:</label>
+                        <p>@Model.Product.Description</p>
+                    </div>
+
+                    <div class="row" style="justify-content: center; display: flex">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <p><span style="font-weight: bold">Alış qiymət:</span> @Model.Product.CostPrice</p>
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <p><span style="font-weight: bold">Satış qiymət:</span> @Model.Product.SalePrice</p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="row" style="justify-content: center; display: flex">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <p><span style="font-weight: bold">Endirim faizi:</span> @Model.Product.DiscountPercent%</p>
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <p><span style="font-weight: bold">Məhsul sayı:</span> @Model.Product.ProductAmount</p>
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="justify-content: center; display: flex">
+
+                        <div class="form-group col-lg-6 col-md-12">
+                            <p><span style="font-weight: bold">Satış sayı:</span> @Model.Product.SaleCount</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="my-2">
+
+                        @if (Model.Product.IsNew)
+                        {
+                            <span style="padding: 10px" class="badge rounded-pill badge-success">Yenidir</span>
+                        }
+
+                        @if (Model.Product.IsPopular)
+                        {
+                            <span style="padding: 10px" class="badge rounded-pill badge-warning">Populyardır</span>
+                        }
+
+                        @if (Model.Product.IsActive)
+                        {
+                            <span style="padding: 10px" class="badge rounded-pill badge-primary">Aktivdir</span>
+                        }
+                        else
+                        {
+                            <span style="padding: 10px" class="badge rounded-pill badge-danger">Aktiv deyil</span>
+                        }
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div style="justify-content: center; display: flex">
+            <a asp-controller="product" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span>Geri</a>
+        </div>
+
+    </div>
+</div>

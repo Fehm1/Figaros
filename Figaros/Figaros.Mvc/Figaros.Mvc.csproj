@@ -11,7 +11,6 @@
     <Folder Include="wwwroot\uploads\About\" />
     <Folder Include="wwwroot\uploads\Employees\" />
     <Folder Include="wwwroot\uploads\Images\" />
-    <Folder Include="wwwroot\uploads\Sponsors\" />
     <Folder Include="wwwroot\uploads\Sliders\" />
     <Folder Include="wwwroot\uploads\Settings\" />
     <Folder Include="wwwroot\uploads\Services\" />

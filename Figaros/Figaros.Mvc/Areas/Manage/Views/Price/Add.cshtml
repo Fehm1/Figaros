@@ -1,0 +1,46 @@
+﻿@model Figaros.Entities.DTOs.PriceDtos.PricePostDto
+@{
+    ViewBag.Title = "Qiymət əlavə et";
+}
+
+<div class="container">
+    <div>
+        <h1>Qiymət əlavə et:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form name="profession-form" asp-action="add" method="post">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+
+            <div class="row" style="justify-content: center; display: flex">
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="Service">Xidmət:</label>
+                    <input class="form-control" asp-for="Service" />
+                    <span class="text-danger" asp-validation-for="Service"></span>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Description">Açıqlama:</label>
+                    <input class="form-control" asp-for="Description" />
+                    <span class="text-danger" asp-validation-for="Description"></span>
+                </div>
+
+                <div class="form-group col-lg-2 col-md-12">
+                    <label asp-for="ServicePrice">Qiymət:</label>
+                    <input class="form-control" asp-for="ServicePrice" />
+                    <span class="text-danger" asp-validation-for="ServicePrice"></span>
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; display: flex">
+                <a asp-controller="price" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span> Geri</a>
+                <button type="submit" class="btn btn-success mx-1"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -202,7 +202,7 @@ namespace Figaros.Services.Concrete
             var result = await _unitOfWork.Products.AnyAsync(c => c.Id == ProductId);
             if (result)
             {
-                var product = await _unitOfWork.Employees.GetAsync(c => c.Id == ProductId);
+                var product = await _unitOfWork.Products.GetAsync(c => c.Id == ProductId);
                 ProductUpdateDto productUpdateDto = _mapper.Map<ProductUpdateDto>(product);
                 return new DataResult<ProductUpdateDto>(ResultStatus.Success, productUpdateDto);
             }
@@ -304,7 +304,6 @@ namespace Figaros.Services.Concrete
                 product.SalePrice = ProductUpdateDto.SalePrice;
                 product.DiscountPercent = ProductUpdateDto.DiscountPercent;
                 product.ProductAmount = ProductUpdateDto.ProductAmount;
-                product.SaleCount = ProductUpdateDto.SaleCount;
                 product.IsNew = ProductUpdateDto.IsNew;
                 product.IsPopular = ProductUpdateDto.IsPopular;
                 product.IsActive = ProductUpdateDto.IsActive;

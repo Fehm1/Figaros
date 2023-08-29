@@ -13,6 +13,8 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
 
             builder.Property(a => a.CompanyImageString).IsRequired();
             builder.Property(a => a.CompanyImageString).HasMaxLength(100);
+            builder.Property(a => a.CompanyName).HasMaxLength(150);
+            builder.Property(a => a.CompanyName).IsRequired();
 
             builder.Property(a => a.CreatedDate).IsRequired();
             builder.Property(a => a.ModifiedDate).IsRequired();

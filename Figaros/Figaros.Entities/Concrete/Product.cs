@@ -11,7 +11,7 @@ namespace Figaros.Entities.Concrete
         public double SalePrice { get; set; }
         public double DiscountPercent { get; set; }
         public int ProductAmount { get; set; }
-        public int SaleCount { get; set; }
+        public int SaleCount { get; set; } = 0;
         public bool IsNew { get; set; }
         public bool IsPopular { get; set; }
 
