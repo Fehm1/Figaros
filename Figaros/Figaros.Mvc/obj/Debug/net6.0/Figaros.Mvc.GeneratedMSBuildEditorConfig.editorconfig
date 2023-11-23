@@ -208,6 +208,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -216,12 +224,56 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/AboutPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFib3V0UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/AppointmentPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFwcG9pbnRtZW50UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/PricePartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByaWNlUGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/ProductPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/RequestPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJlcXVlc3RQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/ServicePartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNlcnZpY2VQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/TeamPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRlYW1QYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/_LayoutCssPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDc3NQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/_LayoutJsPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRKc1BhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/Shared/_LayoutNavbarPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROYXZiYXJQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Views/_ViewImports.cshtml]

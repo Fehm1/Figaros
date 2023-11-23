@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\Fehmin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Fehmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,8 +95,12 @@
         "packagesPath": "C:\\Users\\Fehmin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Fehmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,8 +158,12 @@
         "packagesPath": "C:\\Users\\Fehmin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Fehmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -222,8 +234,12 @@
         "packagesPath": "C:\\Users\\Fehmin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Services\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Fehmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -296,8 +312,12 @@
         "packagesPath": "C:\\Users\\Fehmin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Shared\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Fehmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

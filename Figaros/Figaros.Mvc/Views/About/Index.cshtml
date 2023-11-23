@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Haqqımızda";
+}
+
+<!-- bradcam_area_start -->
+<div class="bradcam_area breadcam_bg overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>About us</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bradcam_area_end -->
+
+@await Html.PartialAsync("AboutPartialView")
+
+@await Html.PartialAsync("TeamPartialView")
+
+@await Html.PartialAsync("RequestPartialView")
+
+@await Html.PartialAsync("AppointmentPartialView")

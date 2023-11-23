@@ -5,6 +5,766 @@
       "PackagePath": "staticwebassets\\Figaros.Mvc.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\gijgo.css",
+      "PackagePath": "staticwebassets\\assets\\css\\gijgo.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\reset.css",
+      "PackagePath": "staticwebassets\\assets\\css\\reset.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\reset.map",
+      "PackagePath": "staticwebassets\\assets\\css\\reset.map"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\slicknav.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slicknav.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\style.map",
+      "PackagePath": "staticwebassets\\assets\\css\\style.map"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\theme-default.css",
+      "PackagePath": "staticwebassets\\assets\\css\\theme-default.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\theme-default.map",
+      "PackagePath": "staticwebassets\\assets\\css\\theme-default.map"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\gijgo-material.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\gijgo-material.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\gijgo-material.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\gijgo-material.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\gijgo-material.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\gijgo-material.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\gijgo-material.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\gijgo-material.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\about\\about_lft.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about_lft.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\about\\about_right.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about_right.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\banner2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\banner3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\banner_service.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\banner_service.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\barber_text.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\barber_text.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\bradcam.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\bradcam.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\img.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\banner\\prise_bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\prise_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\author.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\author.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\blog_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\blog_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\blog_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\blog_4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_4.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\learn_about_bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\learn_about_bg.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\single_blog_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\single_blog_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\single_blog_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\single_blog_4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_4.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\single_blog_5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_5.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\blog\\slide_thumb_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\slide_thumb_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\comment\\comment_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\comment\\comment_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\comment\\comment_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\comment\\comment_2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\comment\\comment_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\comment\\comment_3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\a2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\footer-logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\gallery\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\gallery\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\gallery\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\gallery\\video.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\video.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\offers\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\offers\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\offers\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\offers\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\offers\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\offers\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\next.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\next.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_10.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_4.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_5.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_6.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_7.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_8.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\post_9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_9.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\post\\preview.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\10.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\5.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\7.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\prising\\9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\9.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\service\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\service\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\service\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\team\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\team\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\team\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\img\\testmonial\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\testmonial\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\gijgo.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\gijgo.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\imagesloaded.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\imagesloaded.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\isotope.pkgd.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\isotope.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.form.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.form.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mail-script.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\nice-select.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\scrollIt.js",
+      "PackagePath": "staticwebassets\\assets\\js\\scrollIt.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\vendor\\modernizr-3.5.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.5.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_about.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_blog.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_blog_part.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_blog_part.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_bradcam.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_bradcam.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_btn.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_btn.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_contact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_cutter_master.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_cutter_master.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_elements.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_elements.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_extend.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_gallery.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_gallery.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_header.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_make_apointment.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_make_apointment.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_prising.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_prising.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_reset.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_responsive.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_responsive.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_section_title.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_section_title.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_service.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_service.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_slick-nav.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_slick-nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_slider.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_team.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_team.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_testmonial.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_testmonial.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\_varriable.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_varriable.scss"
+    },
+    {
+      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\style.scss"
+    },
+    {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -7447,10 +8207,6 @@
     {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\28cff48c-fce1-40ca-91f0-389716624a14WhatsApp Image 2023-02-05 at 18.46.10.jpg",
       "PackagePath": "staticwebassets\\uploads\\Employees\\28cff48c-fce1-40ca-91f0-389716624a14WhatsApp Image 2023-02-05 at 18.46.10.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\539abdf6-9753-4c31-b92b-2d174fe699c5WhatsApp Image 2023-02-05 at 18.46.10.jpg",
-      "PackagePath": "staticwebassets\\uploads\\Employees\\539abdf6-9753-4c31-b92b-2d174fe699c5WhatsApp Image 2023-02-05 at 18.46.10.jpg"
     },
     {
       "Id": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Employees\\base.png",

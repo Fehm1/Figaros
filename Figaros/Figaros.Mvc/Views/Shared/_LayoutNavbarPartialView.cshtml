@@ -1,0 +1,44 @@
+﻿<div class="header-area ">
+    <div id="sticky-header" class="main-header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-3">
+                    <div class="logo-img">
+                        <a asp-controller="home" asp-action="index">
+                            <img src="~/assets/img/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-9">
+                    <div class="menu_wrap d-none d-lg-block">
+                        <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                            <div class="main-menu">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" asp-controller="home" asp-action="index">Əsas səhifə</a></li>
+
+                                        <li><a asp-controller="service" asp-action="index">Xidmətlər</a></li>
+
+                                        <li><a asp-controller="About" asp-action="index">Haqqımızda</a></li>
+
+                                        <li><a asp-controller="product" asp-action="index">Məhsullar</a></li>
+
+                                        <li><a asp-controller="contact" asp-action="index">Əlaqə</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="book_room">
+                                <div class="book_btn">
+                                    <a href="#Appointment">Rezervasiya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mobile_menu d-block d-lg-none"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
