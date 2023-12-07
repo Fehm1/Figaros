@@ -1,14 +1,36 @@
-﻿using Figaros.Mvc.Models;
+﻿using Figaros.Data.Concrete.EntityFramework.Contexts;
+using Figaros.Mvc.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+using Microsoft.EntityFrameworkCore;
 
 namespace Figaros.Mvc.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly AppDbContext _context;
+
+        public HomeController(AppDbContext context)
         {
-            return View();
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            HomeViewModel homeViewModel = new HomeViewModel
+            {
+                Sliders = await _context.Sliders.Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync(),
+                About = await _context.About.FirstOrDefaultAsync(),
+                Services = await _context.Services.Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync(),
+                Employees = await _context.Employees.Include(x => x.Profession).Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync(),
+                Prices = await _context.Prices.Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync()
+            };
+
+            ViewBag.Times = await _context.Times.Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync();
+            ViewBag.Employees = await _context.Employees.Include(x => x.Profession).Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync();
+            ViewBag.Services = await _context.Prices.Where(x => x.IsDeleted == false && x.IsActive == true).ToListAsync();
+
+            return View(homeViewModel);
         }
     }
 }

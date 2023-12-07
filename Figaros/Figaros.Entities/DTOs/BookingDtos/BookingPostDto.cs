@@ -39,6 +39,8 @@ namespace Figaros.Entities.DTOs.BookingDtos
         [Required(ErrorMessage = "{0} daxil edin!")]
         public DateTime Date { get; set; }
 
+        public string BookingTime { get; set; } = string.Empty;
+
         [DisplayName("Mesaj")]
         [Required(ErrorMessage = "{0} daxil edin!")]
         [MaxLength(500, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]

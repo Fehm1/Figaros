@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Figaros.Data.Abstract;
 using Figaros.Entities.Concrete;
-using Figaros.Entities.DTOs.AboutDtos;
 using Figaros.Entities.DTOs.BookingDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.Abstract;
@@ -26,6 +25,32 @@ namespace Figaros.Services.Concrete
             if (bookingPostDto != null)
             {
                 var booking = _mapper.Map<Booking>(bookingPostDto);
+                var bookings = await _unitOfWork.Bookings.GetAllAsync(x => !x.IsCompleted);
+
+                DateTime Today = DateTime.Now;
+                booking.BookingTime = $"{booking.Date} {booking.Time}";
+                foreach (var item in bookings)
+                {
+                    if (booking.BookingTime == item.BookingTime && booking.EmployeeId == item.EmployeeId)
+                    {
+                        return new DataResult<BookingDto>(ResultStatus.Error, "Rezervasiya əlavə edilmədi!", new BookingDto
+                        {
+                            Booking = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Rezervasiya əlavə edilmədi!"
+                        });
+                    }
+                }
+
+                if (booking.Date < Today)
+                {
+                    return new DataResult<BookingDto>(ResultStatus.Error, "Rezervasiya əlavə edilmədi!", new BookingDto
+                    {
+                        Booking = null,
+                        ResultStatus = ResultStatus.Error,
+                        Message = "Rezervasiya əlavə edilmədi!"
+                    });
+                }
 
                 var addedBooking = await _unitOfWork.Bookings.AddAsync(booking);
                 await _unitOfWork.SaveAsync();
@@ -235,6 +260,7 @@ namespace Figaros.Services.Concrete
                 booking.Phone = bookingUpdateDto.Phone;
                 booking.Date = bookingUpdateDto.Date;
                 booking.Message = bookingUpdateDto.Message;
+                booking.BookingTime = bookingUpdateDto.BookingTime;
                 booking.IsActive = bookingUpdateDto.IsActive;
                 booking.ModifiedDate = DateTime.Now;
 

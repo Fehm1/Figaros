@@ -15,6 +15,8 @@ namespace Figaros.Entities.Concrete
         public string Message { get; set; }
         public bool IsCompleted { get; set; } = false;
 
+        public string BookingTime { get; set; }
+
         public Employee Employee { get; set; }
         public Price Price { get; set; }
         public Time Time { get; set; }

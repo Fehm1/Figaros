@@ -1,4 +1,6 @@
-﻿
+﻿@using Figaros.Entities.DTOs.BookingDtos;
+@model BookingPostDto
+
 <div class="make_apppointment_area" id="Appointment">
     <div class="container">
         <div class="row">
@@ -12,48 +14,68 @@
             <div class="col-lg-7">
                 <div class="appoint_ment_form pl-68">
 
-                    <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                    <form class="form-contact contact_form" asp-action="create" asp-controller="Appointment" method="post">
                         <div class="row">
 
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                    <input class="form-control valid" asp-for="Fullname" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control valid" name="phone" id="phone" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" placeholder="Enter phone number">
+                                    <input class="form-control valid" asp-for="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" placeholder="Enter phone number">
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder="Enter email">
+                                    <input class="form-control" asp-for="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder="Enter email">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input class="form-control" asp-for="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter message'" placeholder="Enter message">
                                 </div>
                             </div>
 
                             <div class="col-xl-6 col-md-6">
-                                <input id="datepicker" placeholder="Date">
+                                <input class="form-control" asp-for="Date" type="date" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter date'" placeholder="Enter date">
                             </div>
 
                             <div class="col-xl-6 col-md-6">
-                                <input id="timepicker" placeholder="time">
-                            </div>
+                                <select asp-for="TimeId" class="nice-select form-select wide mt-3" id="default-select">
+                                    <option data-display="Saat seçin">Saat seçin</option>
 
-                            <div class="col-xl-6 col-md-6">
-                                <select class="nice-select form-select wide mt-3" id="default-select">
-                                    <option data-display="Choose services">Choose services 1</option>
-                                    <option value="1">Choose services 2</option>
-                                    <option value="2">Choose services 3</option>
-                                    <option value="3">Choose services 4</option>
+                                    @foreach (var item in ViewBag.Times)
+                                    {
+                                        <option value="@item.Id">@item.Hour</option>
+                                    }
+
                                 </select>
                             </div>
 
                             <div class="col-xl-6 col-md-6">
-                                <select class="nice-select form-select wide mt-3" id="default-select">
-                                    <option data-display="Choose Barbers">Choose Barbers</option>
-                                    <option value="1">Zaki</option>
-                                    <option value="2">Ronky</option>
-                                    <option value="3">kalu</option>
+                                <select asp-for="PriceId" class="nice-select form-select wide mt-3" id="default-select">
+                                    <option data-display="Servis seçin">Servis seçin</option>
+
+                                    @foreach (var item in ViewBag.Services)
+                                    {
+                                        <option value="@item.Id">@item.Service</option>
+                                    }
+
+                                </select>
+                            </div>
+
+                            <div class="col-xl-6 col-md-6">
+                                <select asp-for="EmployeeId" class="nice-select form-select wide mt-3" id="default-select">
+                                    <option data-display="Bərbər seçin">Bərbər seçin</option>
+
+                                    @foreach (var item in ViewBag.Employees)
+                                    {
+                                        <option value="@item.Id">@item.FullName</option>
+                                    }
+
                                 </select>
                             </div>
 
@@ -78,7 +100,7 @@
                         <h4>Message us</h4>
                         <p>
                             Support@colorlib.net <br>
-                            (+68) 120034509
+                            (+68) 120034509
                         </p>
                     </div>
                     <div class="single_appontment">
@@ -97,3 +119,7 @@
         </div>
     </div>
 </div>
+
+<script>
+
+</script>

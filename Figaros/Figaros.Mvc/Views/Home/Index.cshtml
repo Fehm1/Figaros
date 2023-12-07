@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HomeViewModel
+@{
     ViewData["Title"] = "Əsas səhifə";
 }
 
@@ -62,14 +63,14 @@
 
 
 
-@await Html.PartialAsync("AboutPartialView")
+@await Html.PartialAsync("AboutPartialView", Model.About)
 
-@await Html.PartialAsync("ServicePartialView")
+@await Html.PartialAsync("ServicePartialView", Model.Services)
 
-@await Html.PartialAsync("PricePartialView")
+@await Html.PartialAsync("PricePartialView", Model.Prices)
 
-@await Html.PartialAsync("TeamPartialView")
+@await Html.PartialAsync("TeamPartialView", Model.Employees)
 
 @await Html.PartialAsync("RequestPartialView")
 
-@await Html.PartialAsync("AppointmentPartialView")
+@await Html.PartialAsync("AppointmentPartialView", Model.Booking)
