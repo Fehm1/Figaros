@@ -28,7 +28,7 @@ namespace Figaros.Entities.DTOs.BookingDtos
         [DisplayName("Email")]
         [Required(ErrorMessage = "{0} daxil edin!")]
         [MaxLength(150, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
-        public string Email { get; set; }
+        public string? Email { get; set; } = string.Empty;
 
         [DisplayName("Telefon")]
         [Required(ErrorMessage = "{0} daxil edin!")]
@@ -44,7 +44,7 @@ namespace Figaros.Entities.DTOs.BookingDtos
         [DisplayName("Mesaj")]
         [Required(ErrorMessage = "{0} daxil edin!")]
         [MaxLength(500, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
-        public string Message { get; set; }
+        public string? Message { get; set; } = "null";
 
         [DisplayName("Tamamlandı?")]
         public bool IsCompleted { get; set; }

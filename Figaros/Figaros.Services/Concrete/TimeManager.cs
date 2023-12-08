@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using Figaros.Data.Abstract;
 using Figaros.Entities.Concrete;
-using Figaros.Entities.DTOs.PriceDtos;
 using Figaros.Entities.DTOs.TimeDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.Abstract;
@@ -45,33 +44,7 @@ namespace Figaros.Services.Concrete
                 Message = "Vaxt əlavə edilmədi!"
             });
         }
-
-        public async Task<IDataResult<TimeDto>> Delete(int TimeId)
-        {
-            var time = await _unitOfWork.Times.GetAsync(x => x.Id == TimeId);
-
-            if (time != null)
-            {
-                time.IsDeleted = true;
-                var deletedTime = await _unitOfWork.Times.UpdateAsync(time);
-                await _unitOfWork.SaveAsync();
-
-                return new DataResult<TimeDto>(ResultStatus.Success, "Vaxt uğurla silindi!", new TimeDto
-                {
-                    Time = deletedTime,
-                    ResultStatus = ResultStatus.Success,
-                    Message = "Vaxt uğurla silindi!"
-                });
-            }
-
-            return new DataResult<TimeDto>(ResultStatus.Error, "Vaxt tapılmadı!", new TimeDto
-            {
-                Time = null,
-                ResultStatus = ResultStatus.Error,
-                Message = "Vaxt tapılmadı!"
-            });
-        }
-
+        
         public async Task<IDataResult<TimeDto>> Get(int TimeId)
         {
             var time = await _unitOfWork.Times.GetAsync(x => x.Id == TimeId);
@@ -170,20 +143,21 @@ namespace Figaros.Services.Concrete
             }
         }
 
-        public async Task<IDataResult<TimeDto>> HardDelete(int TimeId)
+        public async Task<IDataResult<TimeDto>> Active(int TimeId)
         {
             var time = await _unitOfWork.Times.GetAsync(x => x.Id == TimeId);
 
             if (time != null)
             {
-                var deletedTime = await _unitOfWork.Times.DeleteAsync(time);
+                time.IsActive = true;
+                var deletedTime = await _unitOfWork.Times.UpdateAsync(time);
                 await _unitOfWork.SaveAsync();
 
-                return new DataResult<TimeDto>(ResultStatus.Success, "Vaxt uğurla silindi!", new TimeDto
+                return new DataResult<TimeDto>(ResultStatus.Success, "Vaxt uğurla aktiv edildi!", new TimeDto
                 {
                     Time = deletedTime,
                     ResultStatus = ResultStatus.Success,
-                    Message = "Vaxt uğurla silindi!"
+                    Message = "Vaxt uğurla aktiv edildi!"
                 });
             }
 
@@ -195,21 +169,21 @@ namespace Figaros.Services.Concrete
             });
         }
 
-        public async Task<IDataResult<TimeDto>> Restore(int TimeId)
+        public async Task<IDataResult<TimeDto>> Deactive(int TimeId)
         {
             var time = await _unitOfWork.Times.GetAsync(x => x.Id == TimeId);
 
             if (time != null)
             {
-                time.IsDeleted = false;
+                time.IsActive = false;
                 var deletedTime = await _unitOfWork.Times.UpdateAsync(time);
                 await _unitOfWork.SaveAsync();
 
-                return new DataResult<TimeDto>(ResultStatus.Success, "Vaxt uğurla silindi!", new TimeDto
+                return new DataResult<TimeDto>(ResultStatus.Success, "Vaxt uğurla deaktiv edildi!", new TimeDto
                 {
                     Time = deletedTime,
                     ResultStatus = ResultStatus.Success,
-                    Message = "Vaxt uğurla silindi!"
+                    Message = "Vaxt uğurla deaktiv edildi!"
                 });
             }
 

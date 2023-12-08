@@ -13,6 +13,7 @@ namespace Figaros.Services.Abstract
         Task<IDataResult<BookingDto>> Add(BookingPostDto bookingPostDto);
         Task<IDataResult<BookingDto>> Update(BookingUpdateDto bookingUpdateDto);
         Task<IDataResult<BookingDto>> Restore(int bookingId);
+        Task<IDataResult<BookingDto>> Completed(int bookingId);
         Task<IDataResult<BookingDto>> Delete(int bookingId);
         Task<IDataResult<BookingDto>> HardDelete(int bookingId);
     }

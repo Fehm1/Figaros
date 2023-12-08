@@ -28,7 +28,7 @@ namespace Figaros.Services.Concrete
                 var bookings = await _unitOfWork.Bookings.GetAllAsync(x => !x.IsCompleted);
 
                 DateTime Today = DateTime.Now;
-                booking.BookingTime = $"{booking.Date} {booking.Time}";
+                booking.BookingTime = $"{booking.Date.ToShortDateString()} {booking.TimeId}";
                 foreach (var item in bookings)
                 {
                     if (booking.BookingTime == item.BookingTime && booking.EmployeeId == item.EmployeeId)
@@ -42,7 +42,7 @@ namespace Figaros.Services.Concrete
                     }
                 }
 
-                if (booking.Date < Today)
+                if (booking.Date < Today.Date)
                 {
                     return new DataResult<BookingDto>(ResultStatus.Error, "Rezervasiya əlavə edilmədi!", new BookingDto
                     {
@@ -161,7 +161,10 @@ namespace Figaros.Services.Concrete
 
         public async Task<IDataResult<BookingListDto>> GetAllByNonDeleted()
         {
-            var bookings = await _unitOfWork.Bookings.GetAllAsync(x => !x.IsDeleted);
+            DateTime Today = DateTime.Now;
+
+            var bookings = await _unitOfWork.Bookings.GetAllAsync(x => !x.IsDeleted && x.Date == Today.Date, x => x.Employee, x=> x.Time, x => x.Price);
+            bookings = bookings.OrderBy(x => x.TimeId).ToList();
 
             if (bookings.Count >= 0)
             {
@@ -235,6 +238,32 @@ namespace Figaros.Services.Concrete
                     Booking = restoredBooking,
                     ResultStatus = ResultStatus.Success,
                     Message = "Rezervasiya uğurla geri qaytarıldı!"
+                });
+            }
+
+            return new DataResult<BookingDto>(ResultStatus.Error, "Rezervasiya tapılmadı!", new BookingDto
+            {
+                Booking = null,
+                ResultStatus = ResultStatus.Error,
+                Message = "Rezervasiya tapılmadı!"
+            });
+        }
+
+        public async Task<IDataResult<BookingDto>> Completed(int bookingId)
+        {
+            var booking = await _unitOfWork.Bookings.GetAsync(x => x.Id == bookingId);
+
+            if (booking != null)
+            {
+                booking.IsCompleted = true;
+                var restoredBooking = await _unitOfWork.Bookings.UpdateAsync(booking);
+                await _unitOfWork.SaveAsync();
+
+                return new DataResult<BookingDto>(ResultStatus.Success, "Rezervasiya uğurla tamamlandı!", new BookingDto
+                {
+                    Booking = restoredBooking,
+                    ResultStatus = ResultStatus.Success,
+                    Message = "Rezervasiya uğurla tamamlandı!"
                 });
             }
 

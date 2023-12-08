@@ -1,0 +1,128 @@
+﻿@model Figaros.Entities.DTOs.BookingDtos.BookingPostDto
+@{
+    ViewBag.Title = "Rezervasiya əlavə et";
+}
+
+<div class="container">
+    <div>
+        <h1>Rezervasiya əlavə et:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="Add" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Fullname">Tam ad:</label>
+                            <input class="form-control" asp-for="Fullname" />
+                            <span class="text-danger" asp-validation-for="Fullname"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Phone">Telefon:</label>
+                            <input class="form-control" asp-for="Phone" />
+                            <span class="text-danger" asp-validation-for="Phone"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="justify-content: center; display: flex">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Email">Email:</label>
+                            <input class="form-control" asp-for="Email" />
+                            <span class="text-danger" asp-validation-for="Email"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="justify-content: center; display: flex">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="Message">Mesaj:</label>
+                            <textarea asp-for="Message" class="form-control" rows="2"></textarea>
+                            <span class="text-danger" asp-validation-for="Message"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="justify-content: center; display: flex">
+                    <div class="col-lg-5 col-md-12">
+
+                        <div class="form-group">
+                            <label asp-for="Date">Tarix:</label>
+                            <input class="form-control" type="date" asp-for="Date" />
+                            <span class="text-danger" asp-validation-for="Date"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="PriceId" class="form-label">Xidmət: </label>
+                            <select asp-for="PriceId" class="form-select" style="display: block;">
+                                <option selected>Birini seçin</option>
+
+                                @foreach (var service in ViewBag.Prices)
+                                {
+                                    <option value="@service.Id">@service.Service</option>
+                                }
+
+                            </select>
+                            <span asp-validation-for="PriceId" style="color: red"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row" style="justify-content: center; display: flex">
+                    <div class="col-lg-5 col-md-12">
+
+                        <div class="form-group">
+                            <label asp-for="EmployeeId" class="form-label">Bərbər: </label>
+                            <select asp-for="EmployeeId" class="form-select" style="display: block;">
+                                <option selected>Birini seçin</option>
+
+                                @foreach (var barber in ViewBag.Employees)
+                                {
+                                    <option value="@barber.Id">@barber.FullName</option>
+                                }
+
+                            </select>
+                            <span asp-validation-for="EmployeeId" style="color: red"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="TimeId" class="form-label">Vaxt: </label>
+                            <select asp-for="TimeId" class="form-select" style="display: block;">
+                                <option selected>Birini seçin</option>
+
+                                @foreach (var time in ViewBag.Times)
+                                {
+                                    <option value="@time.Id">@time.Hour</option>
+                                }
+
+                            </select>
+                            <span asp-validation-for="TimeId" style="color: red"></span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="justify-content: center; display: flex">
+                <a asp-controller="booking" asp-action="index" class="btn btn-outline-danger mx-1"><span><i class="bi bi-x"></i></span>Geri</a>
+                <button type="submit" class="btn btn-success mx-1"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+            </div>
+
+        </form>
+    </div>
+</div>

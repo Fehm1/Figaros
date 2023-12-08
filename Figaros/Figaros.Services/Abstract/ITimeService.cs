@@ -13,8 +13,7 @@ namespace Figaros.Services.Abstract
         Task<IDataResult<TimeListDto>> GetAllByDeleted();
         Task<IDataResult<TimeDto>> Add(TimePostDto TimePostDto);
         Task<IDataResult<TimeDto>> Update(TimeUpdateDto TimeUpdateDto);
-        Task<IDataResult<TimeDto>> Restore(int TimeId);
-        Task<IDataResult<TimeDto>> Delete(int TimeId);
-        Task<IDataResult<TimeDto>> HardDelete(int TimeId);
+        Task<IDataResult<TimeDto>> Active(int TimeId);
+        Task<IDataResult<TimeDto>> Deactive(int TimeId);
     }
 }
