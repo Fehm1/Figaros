@@ -1,0 +1,274 @@
+﻿@model Figaros.Entities.DTOs.SettingDtos.SettingUpdateDto
+@{
+    ViewBag.Title = "Parametrləri yenilə";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-8 col-md-12 justify-content-start">
+            <h1>Parametrləri yenilə:</h1>
+        </div>
+
+        <div class="col-lg-4 col-md-12 justify-content-end">
+            <a asp-controller="setting" asp-action="index" class="btn btn-outline-danger">Geri</a>
+            <button form="setting" type="submit" class="btn btn-success"><span><i class="bi bi-save"></i></span> Yadda saxla</button>
+        </div>
+
+    </div>
+    <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+
+    <div>
+
+        <form id="setting" name="aboutUs-form" method="post" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <input hidden="true" asp-for="Id" />
+            <input hidden="true" asp-for="HeaderLogoString" />
+            <input hidden="true" asp-for="FooterLogoString" />
+
+            <div>
+                <h3>Logolar</h3>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <img style="max-height: 150px; max-width: 150px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/Settings/@Model.HeaderLogoString">
+                        <input style="display: block; margin-left: auto; margin-right: auto;" asp-for="HeaderLogoFile" />
+                        <span class="text-danger" asp-validation-for="HeaderLogoFile"></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <img style="max-height: 150px; max-width: 150px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/Settings/@Model.FooterLogoString">
+                        <input style="display: block; margin-left: auto; margin-right: auto;" asp-for="FooterLogoFile" />
+                        <span class="text-danger" asp-validation-for="FooterLogoFile"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="form-group">
+                        <label asp-for="FooterDescription">Footer üçün açıqlama:</label>
+                        <textarea asp-for="FooterDescription" class="form-control" rows="2">
+                            @Model.FooterDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="FooterDescription"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="mt-5">
+                        <h3>Bizim servislər</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OurService">Başlıq:</label>
+                        <input class="form-control" asp-for="OurService" />
+                        <span class="text-danger" asp-validation-for="OurService"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OurServiceDescription">Açıqlama:</label>
+                        <textarea asp-for="OurServiceDescription" class="form-control" rows="3">
+                            @Model.OurServiceDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="OurServiceDescription"></span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="mt-5">
+                        <h3>Bizim qiymətlər</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OurPrice">Başlıq:</label>
+                        <input class="form-control" asp-for="OurPrice" />
+                        <span class="text-danger" asp-validation-for="OurPrice"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OurPriceDescription">Açıqlama:</label>
+                        <textarea asp-for="OurPriceDescription" class="form-control" rows="3">
+                            @Model.OurPriceDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="OurPriceDescription"></span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="mt-5">
+                        <h3>Bizim bərbərlər</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OurBarber">Başlıq:</label>
+                        <input class="form-control" asp-for="OurBarber" />
+                        <span class="text-danger" asp-validation-for="OurBarber"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="OurBarberDescription">Açıqlama:</label>
+                        <textarea asp-for="OurBarberDescription" class="form-control" rows="3">
+                            @Model.OurBarberDescription
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="OurBarberDescription"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <h3>İş vaxtları</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="MondayFridayWorkHours">1-5-ci günlər:</label>
+                    <input class="form-control" asp-for="MondayFridayWorkHours" />
+                    <span class="text-danger" asp-validation-for="MondayFridayWorkHours"></span>
+                </div>
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="SaturdayWorkHours">Şənbə günlər iş vaxtı:</label>
+                    <input class="form-control" asp-for="SaturdayWorkHours" />
+                    <span class="text-danger" asp-validation-for="SaturdayWorkHours"></span>
+                </div>
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="SundayWorkHours">Bazar günlər iş vaxtı:</label>
+                    <input class="form-control" asp-for="SundayWorkHours" />
+                    <span class="text-danger" asp-validation-for="SundayWorkHours"></span>
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <h3>Əlaqələr</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Email">Email:</label>
+                    <input class="form-control" asp-for="Email" />
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Phone">Telefon:</label>
+                    <input class="form-control" asp-for="Phone" />
+                    <span class="text-danger" asp-validation-for="Phone"></span>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="form-group">
+                        <label asp-for="Location">Ünvan:</label>
+                        <textarea asp-for="Location" class="form-control" rows="2">
+                            @Model.Location
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="Location"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <h3>Sosial şəbəkələr</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="InstagramUrl">Instagram:</label>
+                        <input class="form-control" asp-for="InstagramUrl" />
+                        <span class="text-danger" asp-validation-for="InstagramUrl"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="WhatsAppUrl">WhatsApp:</label>
+                        <input class="form-control" asp-for="WhatsAppUrl" />
+                        <span class="text-danger" asp-validation-for="WhatsAppUrl"></span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="FacebookUrl">Facebook:</label>
+                        <input class="form-control" asp-for="FacebookUrl" />
+                        <span class="text-danger" asp-validation-for="FacebookUrl"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="TwitterUrl">Twitter:</label>
+                        <input class="form-control" asp-for="TwitterUrl" />
+                        <span class="text-danger" asp-validation-for="TwitterUrl"></span>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="YoutubeUrl">Youtube:</label>
+                        <input class="form-control" asp-for="YoutubeUrl" />
+                        <span class="text-danger" asp-validation-for="YoutubeUrl"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="TiktokUrl">Tiktok:</label>
+                        <input class="form-control" asp-for="TiktokUrl" />
+                        <span class="text-danger" asp-validation-for="TiktokUrl"></span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="form-group form-check col-lg-5 col-md-12">
+                    <input type="checkbox" class="form-check-input" asp-for="IsActiceRequest" />
+                    <label asp-for="IsActiceRequest" class="form-check-label">@(Model.IsActiceRequest ? "Müarciətlər deaktiv edilsin?" : "Müarciətlər aktiv edilsin?")</label>
+                    <span class="text-danger" asp-validation-for="IsActiceRequest"></span>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+
+</div>

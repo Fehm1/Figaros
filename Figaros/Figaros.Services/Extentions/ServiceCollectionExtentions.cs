@@ -38,7 +38,6 @@ namespace Figaros.Services.Extentions
             serviceCollection.AddScoped<IEmployeeService, EmployeeManager>();
             serviceCollection.AddScoped<IFAQService, FAQManager>();
             serviceCollection.AddScoped<IImageService, ImageManager>();
-            serviceCollection.AddScoped<IOurSalonService, OurSalonManager>();
             serviceCollection.AddScoped<IPriceService, PriceManager>();
             serviceCollection.AddScoped<IProductService, ProductManager>();
             serviceCollection.AddScoped<IProfessionService, ProfessionManager>();

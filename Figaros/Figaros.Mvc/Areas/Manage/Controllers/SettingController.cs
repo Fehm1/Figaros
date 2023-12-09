@@ -1,4 +1,4 @@
-﻿using Figaros.Entities.DTOs.OurSalonDtos;
+﻿using Figaros.Entities.DTOs.SettingDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.ComplexTypes;
 using Microsoft.AspNetCore.Mvc;
@@ -6,18 +6,18 @@ using Microsoft.AspNetCore.Mvc;
 namespace Figaros.Mvc.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    public class OurSalonController : Controller
+    public class SettingController : Controller
     {
-        private readonly IOurSalonService _ourSalonService;
+        private readonly ISettingService _settingService;
 
-        public OurSalonController(IOurSalonService ourSalonService)
+        public SettingController(ISettingService settingService)
         {
-            _ourSalonService = ourSalonService;
+            _settingService = settingService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var result = await _ourSalonService.GetAll();
+            var result = await _settingService.Get(2);
 
             return View(result.Data);
         }
@@ -25,7 +25,7 @@ namespace Figaros.Mvc.Areas.Manage.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            var result = await _ourSalonService.GetUpdateDto(id);
+            var result = await _settingService.GetUpdateDto(id);
             if (result.ResultStatus == ResultStatus.Success)
             {
                 return View(result.Data);
@@ -34,19 +34,18 @@ namespace Figaros.Mvc.Areas.Manage.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(OurSalonUpdateDto ourSalonUpdateDto)
+        public async Task<IActionResult> Update(SettingUpdateDto settingUpdateDto)
         {
             if (ModelState.IsValid)
             {
-                var result = await _ourSalonService.Update(ourSalonUpdateDto);
+                var result = await _settingService.Update(settingUpdateDto);
                 if (result.ResultStatus == ResultStatus.Success)
                 {
                     return RedirectToAction("index");
                 }
             }
 
-            return View(ourSalonUpdateDto);
+            return View(settingUpdateDto);
         }
     }
 }

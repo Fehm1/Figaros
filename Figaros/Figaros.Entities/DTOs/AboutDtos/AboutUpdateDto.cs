@@ -9,12 +9,19 @@ namespace Figaros.Entities.DTOs.AboutDtos
         [Required]
         public int Id { get; set; }
 
-        [DisplayName("Şəkil")]
+        [DisplayName("Böyük şəkil")]
         [DataType(DataType.Upload)]
-        public IFormFile? ImageFile { get; set; }
+        public IFormFile? BigImageFile { get; set; }
 
-        [DisplayName("Şəkil sətri")]
-        public string ImageString { get; set; }
+        [DisplayName("Böyük şəkil sətri")]
+        public string BigImageString { get; set; }
+
+        [DisplayName("Kiçik şəkil")]
+        [DataType(DataType.Upload)]
+        public IFormFile? SmallImageFile { get; set; }
+
+        [DisplayName("Kiçik şəkil sətri")]
+        public string SmallImageString { get; set; }
 
         [DisplayName("Başlıq")]
         [Required(ErrorMessage = "{0} daxil edin!")]

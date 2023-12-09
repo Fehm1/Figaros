@@ -1,0 +1,255 @@
+﻿@model Figaros.Entities.DTOs.SettingDtos.SettingDto
+@{
+    ViewBag.Title = "Parametrlər";
+}
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-10 col-md-12 justify-content-start">
+            <h1>Parametrlər:</h1>
+        </div>
+
+        <div class="col-lg-2 col-md-12 justify-content-end">
+            <a asp-controller="setting" asp-action="update" asp-route-Id="@Model.Setting.Id" class="btn btn-warning"><span><i class="bi bi-pen-fill"></i></span> Yenilə</a>
+        </div>
+
+    </div>
+    <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+
+    <div>
+
+        <form name="aboutUs-form" method="post">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div>
+                <h3>Logolar</h3>
+            </div>
+
+            <div class="row">
+
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <img style="max-height: 150px; max-width: 150px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/Settings/@Model.Setting.HeaderLogo">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="form-group">
+                        <img style="max-height: 150px; max-width: 150px; border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" src="~/uploads/Settings/@Model.Setting.FooterLogo">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.FooterDescription">Footer üçün açıqlama:</label>
+                        <textarea asp-for="Setting.FooterDescription" readonly class="form-control" rows="2">
+                            @Model.Setting.FooterDescription
+                        </textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="mt-5">
+                        <h3>Bizim servislər</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.OurService">Başlıq:</label>
+                        <input readonly class="form-control" asp-for="Setting.OurService" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.OurServiceDescription">Açıqlama:</label>
+                        <textarea asp-for="Setting.OurServiceDescription" readonly class="form-control" rows="3">
+                            @Model.Setting.OurServiceDescription
+                        </textarea>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="mt-5">
+                        <h3>Bizim qiymətlər</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.OurPrice">Başlıq:</label>
+                        <input readonly class="form-control" asp-for="Setting.OurPrice" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.OurPriceDescription">Açıqlama:</label>
+                        <textarea asp-for="Setting.OurPriceDescription" readonly class="form-control" rows="3">
+                            @Model.Setting.OurPriceDescription
+                                </textarea>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="mt-5">
+                        <h3>Bizim bərbərlər</h3>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.OurBarber">Başlıq:</label>
+                        <input readonly class="form-control" asp-for="Setting.OurBarber" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.OurBarberDescription">Açıqlama:</label>
+                        <textarea asp-for="Setting.OurBarberDescription" readonly class="form-control" rows="3">
+                            @Model.Setting.OurBarberDescription
+                                </textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <h3>İş vaxtları</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="Setting.MondayFridayWorkHours">1-5-ci günlər:</label>
+                    <input readonly class="form-control" asp-for="Setting.MondayFridayWorkHours" />
+                </div>
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="Setting.SaturdayWorkHours">Şənbə günlər iş vaxtı:</label>
+                    <input readonly class="form-control" asp-for="Setting.SaturdayWorkHours" />
+                </div>
+
+                <div class="form-group col-lg-4 col-md-12">
+                    <label asp-for="Setting.SundayWorkHours">Bazar günlər iş vaxtı:</label>
+                    <input readonly class="form-control" asp-for="Setting.SundayWorkHours" />
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <h3>Əlaqələr</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Setting.Email">Email:</label>
+                    <input readonly class="form-control" asp-for="Setting.Email" />
+                </div>
+
+                <div class="form-group col-lg-6 col-md-12">
+                    <label asp-for="Setting.Phone">Telefon:</label>
+                    <input readonly class="form-control" asp-for="Setting.Phone" />
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.Location">Ünvan:</label>
+                        <textarea asp-for="Setting.Location" readonly class="form-control" rows="2">
+                            @Model.Setting.Location
+                        </textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mt-5">
+                <h3>Sosial şəbəkələr</h3>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.InstagramUrl">Instagram:</label>
+                        <input readonly class="form-control" asp-for="Setting.InstagramUrl" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.WhatsAppUrl">WhatsApp:</label>
+                        <input readonly class="form-control" asp-for="Setting.WhatsAppUrl" />
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.FacebookUrl">Facebook:</label>
+                        <input readonly class="form-control" asp-for="Setting.FacebookUrl" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.TwitterUrl">Twitter:</label>
+                        <input readonly class="form-control" asp-for="Setting.TwitterUrl" />
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+
+                    <div class="form-group">
+                        <label asp-for="Setting.YoutubeUrl">Youtube:</label>
+                        <input readonly class="form-control" asp-for="Setting.YoutubeUrl" />
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Setting.TiktokUrl">Tiktok:</label>
+                        <input readonly class="form-control" asp-for="Setting.TiktokUrl" />
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                @if (Model.Setting.IsActiceRequest)
+                {
+                    <div class="badge badge-success col-12 p-3" style="font-size: medium">
+                        Müraciətlər aktivdir <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                }
+                else
+                {
+                    <div class="badge badge-danger col-12 p-3" style="font-size: medium">
+                        Müraciətlər aktiv deyil <i class="bi bi-x-circle-fill"></i>
+                    </div>
+                }
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+</div>

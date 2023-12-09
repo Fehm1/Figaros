@@ -50,7 +50,7 @@
                             }
                             else
                             {
-                                <tr>
+                                <tr style="background-color: #ffd0d0;">
                                     <th scope="row">@(++count)</th>
                                     <td>@request.Fullname</td>
                                     <td>@request.IntagramURl</td>
@@ -84,12 +84,22 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            $('#requestTable').DataTable({
+            const dataTable = $('#requestTable').DataTable({
                 dom:
                     "<'row'<'col-sm-3'l><'col-sm-6 text-center'B><'col-sm-3'f>>" +
                     "<'row'<'col-sm-12'tr>>" +
                     "<'row'<'col-sm-5'i><'col-sm-7'p>>",
                 buttons: [
+                    {
+                        text: 'Əlavə et  <i class="bi bi-plus-circle"></i>',
+                        className: 'btn btn-success',
+                        attr: {
+                            id: "btnRequestAdd",
+                        },
+                        action: function (e, dt, node, config) {
+
+                        }
+                    },
                     {
                         text: 'Yenilə  <i class="bi bi-arrow-counterclockwise"></i>',
                         className: 'btn btn-warning',
@@ -291,13 +301,16 @@
                 }
             });
 
+            //Add
+            $('#btnRequestAdd').click(function () {
+                window.location.assign('/Manage/Request/Add');
+            });
+
             //Deleted table
             $('#btnRequestDeletedTable').click(function () {
                 window.location.assign('/Manage/Request/DeletedTable');
             });
 
         });
-
-
     </script>
 }

@@ -23,12 +23,41 @@ namespace Figaros.Entities.DTOs.SettingDtos
         [DisplayName("Footer logo sətri")]
         public string FooterLogoString { get; set; }
 
-        [DisplayName("Kontakt şəkil")]
-        [DataType(DataType.Upload)]
-        public IFormFile? ContactImageFile { get; set; }
+        [DisplayName("Footer açıqlaması")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(300, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string FooterDescription { get; set; }
 
-        [DisplayName("Kontakt şəkil sətri")]
-        public string ContactImageString { get; set; }
+        [DisplayName("Bizim xidmətlər")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(150, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string OurService { get; set; }
+
+        [DisplayName("Bizim xidmətlərin açıqlaması")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(300, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string OurServiceDescription { get; set; }
+
+        [DisplayName("Bizim qiymətlər")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(150, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string OurPrice { get; set; }
+
+        [DisplayName("Bizim qiymətlər açıqlama")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(300, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string OurPriceDescription { get; set; }
+
+        [DisplayName("Bizim bərbərlər")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(150, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string OurBarber { get; set; }
+
+        [DisplayName("Bizim bərbərlər açıqlama")]
+        [Required(ErrorMessage = "{0} daxil edin!")]
+        [MaxLength(300, ErrorMessage = "{0} {1} uzunluqdan az olmamalıdır!")]
+        public string OurBarberDescription { get; set; }
+
 
         [DisplayName("Ünvan")]
         [Required(ErrorMessage = "{0} daxil edin!")]

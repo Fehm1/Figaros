@@ -1,5 +1,4 @@
 ﻿using Figaros.Entities.DTOs.AboutDtos;
-using Figaros.Entities.DTOs.OurSalonDtos;
 using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.ComplexTypes;
 using Microsoft.AspNetCore.Mvc;

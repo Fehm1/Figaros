@@ -12,7 +12,6 @@ namespace Figaros.Data.Concrete
         private readonly EFEmployeeRepository _eFEmployeeRepository;
         private readonly EFFAQRepository _eFFAQRepository;
         private readonly EFImageRepository _eFImageRepository;
-        private readonly EFOurSalonRepository _eFOurSalonRepository;
         private readonly EFPriceRepository _eFPriceRepository;
         private readonly EFProductRepository _eFProductRepository;
         private readonly EFProfessionRepository _eEFProfessionRepository;
@@ -37,8 +36,6 @@ namespace Figaros.Data.Concrete
         public IFAQRepository FAQs => _eFFAQRepository ?? new EFFAQRepository(_context);
 
         public IImageRepository Images => _eFImageRepository ?? new EFImageRepository(_context);
-
-        public IOurSalonRepository OurSalon => _eFOurSalonRepository ?? new EFOurSalonRepository(_context);
 
         public IPriceRepository Prices => _eFPriceRepository ?? new EFPriceRepository(_context);
 

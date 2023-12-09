@@ -5,7 +5,6 @@ using Figaros.Entities.DTOs.BookingDtos;
 using Figaros.Entities.DTOs.EmployeeDtos;
 using Figaros.Entities.DTOs.FAQDtos;
 using Figaros.Entities.DTOs.ImageDtos;
-using Figaros.Entities.DTOs.OurSalonDtos;
 using Figaros.Entities.DTOs.PriceDtos;
 using Figaros.Entities.DTOs.ProductDtos;
 using Figaros.Entities.DTOs.ProfessionDtos;
@@ -45,11 +44,6 @@ namespace Figaros.Services.AutoMapper
             CreateMap<ImagePostDto, Image>();
             CreateMap<ImageUpdateDto, Image>();
             CreateMap<Image, ImageUpdateDto>();
-
-            CreateMap<OurSalon, OurSalonDto>();
-            CreateMap<OurSalonPostDto, OurSalon>();
-            CreateMap<OurSalonUpdateDto, OurSalon>();
-            CreateMap<OurSalon, OurSalonUpdateDto>();
 
             CreateMap<Price, PriceDto>();
             CreateMap<PricePostDto, Price>();

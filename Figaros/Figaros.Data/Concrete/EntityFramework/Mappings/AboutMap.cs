@@ -11,8 +11,10 @@ namespace Figaros.Data.Concrete.EntityFramework.Mappings
             builder.HasKey(a => a.Id);
             builder.Property(a => a.Id).ValueGeneratedOnAdd();
 
-            builder.Property(a => a.ImageString).IsRequired();
-            builder.Property(a => a.ImageString).HasMaxLength(100);
+            builder.Property(a => a.BigImageString).IsRequired();
+            builder.Property(a => a.BigImageString).HasMaxLength(100);
+            builder.Property(a => a.SmallImageString).IsRequired();
+            builder.Property(a => a.SmallImageString).HasMaxLength(100);
             builder.Property(a => a.Title).IsRequired();
             builder.Property(a => a.Title).HasMaxLength(150);
             builder.Property(a => a.Description).IsRequired();

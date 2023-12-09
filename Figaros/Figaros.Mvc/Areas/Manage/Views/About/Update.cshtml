@@ -15,17 +15,26 @@
             <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
 
             <input hidden="true" asp-for="Id" />
-            <input hidden="true" asp-for="ImageString" />
+            <input hidden="true" asp-for="BigImageString" />
+            <input hidden="true" asp-for="SmallImageString" />
 
             <div>
 
                 <div class="row" style="justify-content: center; display: flex">
 
-                    <div class="col-lg-5 col-md-12">
+                    <div class="col-lg-3 col-md-12">
                         <div class="form-group">
-                            <img id="image" style="height: 250px; width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/About/@Model.ImageString" />
-                            <input readonly id="input" style="display: block; margin-left: auto; margin-right: auto;" asp-for="ImageFile" />
-                            <span class="text-danger" asp-validation-for="ImageFile"></span>
+                            <img id="bigimage" style="height: 250px; width: 250px; border-radius: 5px; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/About/@Model.BigImageString" />
+                            <input readonly id="biginput" style="display: block; margin-left: auto; margin-right: auto;" asp-for="BigImageFile" />
+                            <span class="text-danger" asp-validation-for="BigImageFile"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <div class="form-group">
+                            <img id="smallimage" style="height: 250px; width: 250px; border-radius: 5px; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/About/@Model.SmallImageString" />
+                            <input readonly id="smallinput" style="display: block; margin-left: auto; margin-right: auto;" asp-for="SmallImageFile" />
+                            <span class="text-danger" asp-validation-for="SmallImageFile"></span>
                         </div>
                     </div>
 
@@ -60,8 +69,18 @@
 
 @section Scripts{
     <script>
-        const image = document.getElementById('image')
-        const input = document.getElementById('input');
+        const bigimage = document.getElementById('bigimage')
+        const biginput = document.getElementById('biginput');
+
+        biginput.onchange = evt => {
+            const [file] = biginput.files
+            if (file) {
+                bigimage.src = URL.createObjectURL(file)
+            }
+        }
+
+        const image = document.getElementById('smallimage')
+        const input = document.getElementById('smallinput');
 
         input.onchange = evt => {
             const [file] = input.files

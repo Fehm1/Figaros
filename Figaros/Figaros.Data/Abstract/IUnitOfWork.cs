@@ -7,7 +7,6 @@
         IEmployeeRepository Employees { get; }
         IFAQRepository FAQs { get; }
         IImageRepository Images { get; }
-        IOurSalonRepository OurSalon { get; }
         IPriceRepository Prices { get; }
         IProductRepository Products { get; }
         IProfessionRepository Professions { get; }

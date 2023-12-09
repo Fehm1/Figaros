@@ -13,7 +13,6 @@ namespace Figaros.Data.Concrete.EntityFramework.Contexts
         public DbSet<Employee> Employees { get; set; }
         public DbSet<FAQ> FAQs { get; set; }
         public DbSet<Image> Images { get; set; }
-        public DbSet<OurSalon> OurSalon { get; set; }
         public DbSet<Price> Prices { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Profession> Professions { get; set; }
@@ -38,7 +37,6 @@ namespace Figaros.Data.Concrete.EntityFramework.Contexts
             modelBuilder.ApplyConfiguration(new EmployeeMap());
             modelBuilder.ApplyConfiguration(new FAQMap());
             modelBuilder.ApplyConfiguration(new ImageMap());
-            modelBuilder.ApplyConfiguration(new OurSalonMap());
             modelBuilder.ApplyConfiguration(new PriceMap());
             modelBuilder.ApplyConfiguration(new ProductMap());
             modelBuilder.ApplyConfiguration(new ProfessionMap());

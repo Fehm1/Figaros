@@ -9,10 +9,12 @@ namespace Figaros.Mvc.Areas.Manage.Controllers
     public class RequestController : Controller
     {
         private readonly IRequestService _requestService;
+        private readonly ISettingService _settingService;
 
-        public RequestController(IRequestService requestService)
+        public RequestController(IRequestService requestService, ISettingService settingService)
         {
             _requestService = requestService;
+            _settingService = settingService;
         }
 
         public async Task<IActionResult> Index()

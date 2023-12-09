@@ -51,6 +51,8 @@ namespace Figaros.Services.Concrete
             {
                 var setting = await _unitOfWork.Settings.GetAsync(c => c.Id == settingId);
                 SettingUpdateDto settingUpdateDto = _mapper.Map<SettingUpdateDto>(setting);
+                settingUpdateDto.HeaderLogoString = setting.HeaderLogo;
+                settingUpdateDto.FooterLogoString = setting.FooterLogo;
                 return new DataResult<SettingUpdateDto>(ResultStatus.Success, settingUpdateDto);
             }
             else
@@ -121,17 +123,37 @@ namespace Figaros.Services.Concrete
                     setting.FooterLogo = newImage;
                 }
 
+                setting.FooterDescription = settingUpdateDto.FooterDescription;
+                setting.OurService = settingUpdateDto.OurService;
+                setting.OurServiceDescription = settingUpdateDto.OurServiceDescription;
+                setting.OurPrice = settingUpdateDto.OurPrice;
+                setting.OurPriceDescription = settingUpdateDto.OurPriceDescription;
+                setting.OurBarber = settingUpdateDto.OurBarber;
+                setting.OurBarberDescription = settingUpdateDto.OurBarberDescription;
+                setting.MondayFridayWorkHours = settingUpdateDto.MondayFridayWorkHours;
+                setting.SaturdayWorkHours = settingUpdateDto.SaturdayWorkHours;
+                setting.SaturdayWorkHours = settingUpdateDto.SundayWorkHours;
+                setting.Email = settingUpdateDto.Email;
+                setting.Phone = settingUpdateDto.Phone;
+                setting.Location = settingUpdateDto.Location;
+                setting.InstagramUrl = settingUpdateDto.InstagramUrl;
+                setting.FacebookUrl = settingUpdateDto.FacebookUrl;
+                setting.TwitterUrl = settingUpdateDto.TwitterUrl;
+                setting.YoutubeUrl = settingUpdateDto.YoutubeUrl;
+                setting.WhatsAppUrl = settingUpdateDto.WhatsAppUrl;
+                setting.TiktokUrl = settingUpdateDto.TiktokUrl;
+                setting.IsActiceRequest = settingUpdateDto.IsActiceRequest;
                 setting.IsActive = settingUpdateDto.IsActive;
                 setting.ModifiedDate = DateTime.Now;
 
                 var updatedSetting = await _unitOfWork.Settings.UpdateAsync(setting);
                 await _unitOfWork.SaveAsync();
 
-                return new DataResult<SettingDto>(ResultStatus.Success, "Şəkil uğurla yeniləndi!", new SettingDto
+                return new DataResult<SettingDto>(ResultStatus.Success, "Parametrlər uğurla yeniləndi!", new SettingDto
                 {
                     Setting = updatedSetting,
                     ResultStatus = ResultStatus.Error,
-                    Message = "Şəkil uğurla yeniləndi!"
+                    Message = "Parametrlər uğurla yeniləndi!"
                 });
             }
 

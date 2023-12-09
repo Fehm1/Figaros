@@ -64,9 +64,9 @@ namespace Figaros.Services.Concrete
 
             if (about != null)
             {
-                if (aboutUpdateDto.ImageFile != null)
+                if (aboutUpdateDto.BigImageFile != null)
                 {
-                    if (!aboutUpdateDto.ImageFile.IsImageContent())
+                    if (!aboutUpdateDto.BigImageFile.IsImageContent())
                     {
                         return new DataResult<AboutDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new AboutDto
                         {
@@ -76,7 +76,7 @@ namespace Figaros.Services.Concrete
                         });
                     }
 
-                    if (!aboutUpdateDto.ImageFile.IsValidImageLength())
+                    if (!aboutUpdateDto.BigImageFile.IsValidImageLength())
                     {
                         return new DataResult<AboutDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new AboutDto
                         {
@@ -86,10 +86,38 @@ namespace Figaros.Services.Concrete
                         });
                     }
 
-                    string newImage = aboutUpdateDto.ImageFile.SaveImage(_env.WebRootPath, "uploads/About");
-                    about.ImageString.DeleteImage(_env.WebRootPath, "uploads/About");
+                    string newImage = aboutUpdateDto.BigImageFile.SaveImage(_env.WebRootPath, "uploads/About");
+                    about.BigImageString.DeleteImage(_env.WebRootPath, "uploads/About");
 
-                    about.ImageString = newImage;
+                    about.BigImageString = newImage;
+                }
+
+                if (aboutUpdateDto.SmallImageFile != null)
+                {
+                    if (!aboutUpdateDto.SmallImageFile.IsImageContent())
+                    {
+                        return new DataResult<AboutDto>(ResultStatus.Error, "Şəkil formatı daxil edin!", new AboutDto
+                        {
+                            About = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkil formatı daxil edin!"
+                        });
+                    }
+
+                    if (!aboutUpdateDto.SmallImageFile.IsValidImageLength())
+                    {
+                        return new DataResult<AboutDto>(ResultStatus.Error, "Şəkilin həcmi böyükdür!", new AboutDto
+                        {
+                            About = null,
+                            ResultStatus = ResultStatus.Error,
+                            Message = "Şəkilin həcmi böyükdür!"
+                        });
+                    }
+
+                    string newImage = aboutUpdateDto.SmallImageFile.SaveImage(_env.WebRootPath, "uploads/About");
+                    about.SmallImageString.DeleteImage(_env.WebRootPath, "uploads/About");
+
+                    about.SmallImageString = newImage;
                 }
 
                 about.Title = aboutUpdateDto.Title;

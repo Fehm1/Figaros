@@ -80,14 +80,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXEltYWdlXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/OurSalon/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE91clNhbG9uXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/OurSalon/Update.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXE91clNhbG9uXFVwZGF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Price/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFByaWNlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -162,6 +154,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Service/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNlcnZpY2VcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Setting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Setting/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWFuYWdlXFZpZXdzXFNldHRpbmdcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fehmin/OneDrive/İş masası/Figaros Project/Figaros/Figaros.Mvc/Areas/Manage/Views/Shared/_Layout.cshtml]
