@@ -1,4 +1,5 @@
-﻿@{
+﻿@model ServiceViewModel
+@{
     ViewBag.Title = "Xidmətlər";
 }
 
@@ -14,8 +15,8 @@
 </div>
 <!-- bradcam_area_end -->
 
-@await Html.PartialAsync("ServicePartialView")
+@await Html.PartialAsync("ServicePartialView", Model.Services)
 
-@await Html.PartialAsync("PricePartialView")
+@await Html.PartialAsync("PricePartialView", Model.Prices)
 
-@await Html.PartialAsync("AppointmentPartialView")
+@await Html.PartialAsync("AppointmentPartialView", Model.Booking)

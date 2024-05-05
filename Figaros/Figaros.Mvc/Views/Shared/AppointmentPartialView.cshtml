@@ -1,5 +1,9 @@
-﻿@using Figaros.Entities.DTOs.BookingDtos;
+﻿@using Figaros.Entities.Concrete;
+@using Figaros.Entities.DTOs.BookingDtos;
 @model BookingPostDto
+@{
+    Setting setting = ViewBag.Settings; 
+}
 
 <div class="make_apppointment_area" id="Appointment">
     <div class="container">
@@ -44,7 +48,7 @@
                             </div>
 
                             <div class="col-xl-6 col-md-6">
-                                <select asp-for="TimeId" class="nice-select form-select wide mt-3" id="default-select">
+                                <select asp-for="TimeId" class="nice-select form-select wide form-contact form-control" id="default-select">
                                     <option data-display="Saat seçin">Saat seçin</option>
 
                                     @foreach (var item in ViewBag.Times)
@@ -56,7 +60,7 @@
                             </div>
 
                             <div class="col-xl-6 col-md-6">
-                                <select asp-for="PriceId" class="nice-select form-select wide mt-3" id="default-select">
+                                <select asp-for="PriceId" class="nice-select form-select wide mt-3 form-contact form-control" id="default-select">
                                     <option data-display="Servis seçin">Servis seçin</option>
 
                                     @foreach (var item in ViewBag.Services)
@@ -68,7 +72,7 @@
                             </div>
 
                             <div class="col-xl-6 col-md-6">
-                                <select asp-for="EmployeeId" class="nice-select form-select wide mt-3" id="default-select">
+                                <select asp-for="EmployeeId" class="nice-select form-select wide mt-3 form-contact form-control" id="default-select">
                                     <option data-display="Bərbər seçin">Bərbər seçin</option>
 
                                     @foreach (var item in ViewBag.Employees)
@@ -92,26 +96,26 @@
                     <div class="single_appontment">
                         <h4>Visit our studio at</h4>
                         <p>
-                            221B Baker Street, P. O Box 3 Park Road,
-                            USA - 215852
+                            Bakı şəhəri, Hüseyn Cavid prospekti
+                            1141
                         </p>
                     </div>
                     <div class="single_appontment">
                         <h4>Message us</h4>
                         <p>
-                            Support@colorlib.net <br>
-                            (+68) 120034509
+                            @setting.Email <br>
+                            @setting.Phone
                         </p>
                     </div>
                     <div class="single_appontment">
                         <h4>Working Hours</h4>
                         <p class="d-flex justify-content-between">
                             <span>Monday - Friday</span>
-                            <span>:  09.00 - 23.00</span>
+                            <span>:  @setting.MondayFridayWorkHours</span>
                         </p>
                         <p class="d-flex justify-content-between">
-                            <span>Sunday</span>
-                            <span>:  09.00 - 16.00</span>
+                            <span>Saturday & Sunday</span>
+                            <span>:  @setting.SaturdayWorkHours</span>
                         </p>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ namespace Figaros.Shared.Extentions
 
         public static bool IsValidImageLength(this IFormFile formFile)
         {
-            if (formFile.Length < 2 * 1024 * 1024)
+            if (formFile.Length < 3 * 1024 * 1024)
             {
                 return true;
             }

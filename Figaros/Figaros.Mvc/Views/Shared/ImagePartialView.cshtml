@@ -1,0 +1,22 @@
+﻿@using Figaros.Entities.Concrete;
+@model IList<Image>
+
+<div class="service_area">
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <div class="col-lg-4 col-md-6 py-3">
+                    <div class="single_service">
+                        <div class="service_thumb">
+                            <img src="~/uploads/Images/@Model[i].ImageString" height="300px" alt="">
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

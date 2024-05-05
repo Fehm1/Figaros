@@ -1,28 +1,34 @@
-﻿<!-- about_area_start -->
+﻿@using Figaros.Entities.Concrete;
+@model About
+@{
+    Setting setting = ViewBag.Settings;
+}
+
+<!-- about_area_start -->
 <div class="about_area ">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="about_thumbs">
                     <div class="large_img_1">
-                        <img src="~/assets/img/about/about_lft.png" alt="">
+                        <img src="~/uploads/About/@Model.BigImageString" alt="">
                     </div>
                     <div class="small_img_1">
-                        <img src="~/assets/img/about/about_right.png" alt="">
+                        <img src="~/uploads/About/@Model.SmallImageString" alt="">
                     </div>
                 </div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6">
                 <div class="about_info">
                     <div class="section_title mb-20px">
-                        <h3>About Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliteiusmod tempor incididunt ut labore et dolore magna aliqua. Qpsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultr.</p>
+                        <h3>@Model.Title</h3>
+                        <p>@Model.Description</p>
                     </div>
                     <p class="opening_hour">
                         Opening Hour
-                        <span>10:00 am - 10:00 pm</span>
+                        <span>@setting.MondayFridayWorkHours</span>
                     </p>
-                    <a href="about.html" class="boxed-btn3">About Us</a>
+                    <a href="https://localhost:7054/About" class="boxed-btn3">About Us</a>
                 </div>
             </div>
         </div>

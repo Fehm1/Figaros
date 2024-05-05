@@ -1,5 +1,9 @@
-﻿
-<div class="team_area ">
+﻿@using Figaros.Entities.Concrete;
+@{
+    Setting setting = ViewBag.Settings; 
+}
+
+<div class="team_area" style="display: @(setting.IsActiceRequest ? "" : "none")">
     @*gj-hidden*@
     <div class="container">
         <div class="row justify-content-center">
