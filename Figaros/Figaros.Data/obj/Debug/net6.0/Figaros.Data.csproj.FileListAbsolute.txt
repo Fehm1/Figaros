@@ -1,4 +1,5 @@
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\bin\Debug\net6.0\Figaros.Data.deps.json
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\bin\Debug\net6.0\Figaros.Data.runtimeconfig.json
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\bin\Debug\net6.0\Figaros.Data.dll
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\bin\Debug\net6.0\Figaros.Data.pdb
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\bin\Debug\net6.0\Figaros.Entities.dll
@@ -14,6 +15,5 @@ C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\D
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\Debug\net6.0\Figaros.Data.dll
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\Debug\net6.0\refint\Figaros.Data.dll
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\Debug\net6.0\Figaros.Data.pdb
-C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\Debug\net6.0\ref\Figaros.Data.dll
-C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\bin\Debug\net6.0\Figaros.Data.runtimeconfig.json
 C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\Debug\net6.0\Figaros.Data.genruntimeconfig.cache
+C:\Users\Fehmin\OneDrive\İş masası\Figaros Project\Figaros\Figaros.Data\obj\Debug\net6.0\ref\Figaros.Data.dll

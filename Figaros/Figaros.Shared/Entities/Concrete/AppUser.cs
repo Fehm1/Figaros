@@ -13,5 +13,7 @@ namespace Figaros.Shared.Entities.Concrete
         public bool IsActive { get; set; } = true;
         public bool IsAdmin { get; set; } = false;
         public bool IsSuperAdmin { get; set; } = false;
+
+        public IdentityRole Role { get; set; }
     }
 }
