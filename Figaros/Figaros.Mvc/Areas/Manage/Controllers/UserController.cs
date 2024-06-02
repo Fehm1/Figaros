@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
-using System.Web.Helpers;
 
 namespace EraLogisticMVC.Areas.Manage.Controllers
 {
@@ -106,29 +105,51 @@ namespace EraLogisticMVC.Areas.Manage.Controllers
             return View(userPostDto);
         }
 
+        public async Task<IActionResult> Look(string id)
+        {
+            if (id != null)
+            {
+                AppUser user = await _context.Users.Include(x => x.Role).FirstOrDefaultAsync(x => x.Id == id);
+
+                UserDto userDto = new UserDto
+                {
+                    User = user
+                };
+
+                return View(userDto);
+            }
+
+            return View();
+        }
+
         [HttpGet]
         public async Task<IActionResult> Update(string id)
         {
-            ViewBag.Roles = await _context.Roles.ToListAsync();
-
-            AppUser user = await _context.Users.Include(x => x.Role).FirstOrDefaultAsync(x => x.Id == id);
-
-            UserUpdateDto userUpdateDto = new UserUpdateDto
+            if (id != null)
             {
-                Id = id,
-                Name = user.Name,
-                Surname = user.Surname,
-                UserName = user.UserName,
-                Email = user.Email,
-                Phone = user.PhoneNumber,
-                RoleId = user.RoleId,
-                IsActive = user.IsActive,
-                ImageString = user.Image,
-                IsAdmin = user.IsAdmin,
-                IsSuperAdmin = user.IsSuperAdmin
-            };
+                ViewBag.Roles = await _context.Roles.ToListAsync();
 
-            return View(userUpdateDto);
+                AppUser user = await _context.Users.Include(x => x.Role).FirstOrDefaultAsync(x => x.Id == id);
+
+                UserUpdateDto userUpdateDto = new UserUpdateDto
+                {
+                    Id = id,
+                    Name = user.Name,
+                    Surname = user.Surname,
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    Phone = user.PhoneNumber,
+                    RoleId = user.RoleId,
+                    IsActive = user.IsActive,
+                    ImageString = user.Image,
+                    IsAdmin = user.IsAdmin,
+                    IsSuperAdmin = user.IsSuperAdmin
+                };
+
+                return View(userUpdateDto);
+            }
+
+            return View();
         }
 
         [HttpPost]
@@ -244,6 +265,22 @@ namespace EraLogisticMVC.Areas.Manage.Controllers
             var hashedPassword = hash.ComputeHash(passwordBytes);
 
             return Convert.ToHexString(hashedPassword);
+        }
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            AppUser user = await _context.Users.Include(x => x.Role).FirstOrDefaultAsync(x => x.Id == id);
+
+            if (user != null)
+            {
+                await _userManager.RemoveFromRoleAsync(user, user.Role.Name);
+                await _userManager.DeleteAsync(user);
+                user.Image.DeleteImage(_env.WebRootPath, "uploads/Users");
+
+                return Ok();
+            }
+
+            return NotFound();
         }
     }
 }

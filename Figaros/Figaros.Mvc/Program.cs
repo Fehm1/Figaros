@@ -20,7 +20,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LogoutPath = new PathString("/Manage/Account/Logout");
     options.Cookie = new CookieBuilder
     {
-        Name = "EmaLogistic",
+        Name = "Figaros",
         HttpOnly = true,
         SameSite = SameSiteMode.Strict,
         SecurePolicy = CookieSecurePolicy.SameAsRequest // Always
@@ -43,7 +43,7 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
         name: "areas",
-        pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+        pattern: "{area:exists}/{controller=Account}/{action=login}/{id?}");
 
     endpoints.MapControllerRoute(
         name: "default",

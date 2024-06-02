@@ -3,6 +3,8 @@ using Figaros.Data.Concrete;
 using Figaros.Data.Concrete.EntityFramework.Contexts;
 using Figaros.Services.Abstract;
 using Figaros.Services.Concrete;
+using Figaros.Services.Services.Abstract;
+using Figaros.Services.Services.Concrete;
 using Figaros.Shared.Entities.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +17,8 @@ namespace Figaros.Services.Extentions
         public static IServiceCollection LoadMyServices(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddDbContext<AppDbContext>();
+
+            serviceCollection.AddScoped<IManageLayoutService ,ManageLayoutService>();
 
             serviceCollection.AddIdentity<AppUser, IdentityRole>(options =>
             {

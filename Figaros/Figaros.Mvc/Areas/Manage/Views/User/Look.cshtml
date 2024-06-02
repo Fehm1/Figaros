@@ -1,0 +1,92 @@
+﻿@model Figaros.Entities.DTOs.UserDtos.UserDto
+@{
+    ViewBag.Title = "Profil";
+}
+
+<div class="container">
+    <div>
+        <h1>Profil:</h1>
+        <hr style="border-top: 3px solid #bbb; border-radius: 5px;">
+    </div>
+    <div>
+        <form asp-action="update" id="form-team-add" enctype="multipart/form-data">
+
+            <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+            <div asp-validation-summary="All" class="text-danger" id="validation-summary" aria-hidden="true" style="display: none"></div>
+
+            <div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <img id="UserImage" style="height: 200px; width: 200px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto; object-fit: cover; background: #dfdfdf" src="~/uploads/Users/@Model.User.Image" />
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+
+                        <div class="form-group">
+                            <label asp-for="User.Role.Name">Rol:</label>
+                            <input class="form-control" asp-for="User.Role.Name" readonly />
+                        </div>
+
+
+                        <div class="form-group">
+                            <label asp-for="User.UserName">İstifadəçi adı:</label>
+                            <input class="form-control" asp-for="User.UserName" readonly/>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="User.Name">Ad:</label>
+                            <input class="form-control" asp-for="User.Name" readonly/>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="User.Surname">Soyad:</label>
+                            <input class="form-control" asp-for="User.Surname" readonly/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="justify-content: center; display: flex">
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="User.Email">Email:</label>
+                            <input class="form-control" asp-for="User.Email" readonly/>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-12">
+                        <div class="form-group">
+                            <label asp-for="User.PhoneNumber">Telefon:</label>
+                            <input class="form-control" asp-for="User.PhoneNumber" readonly/>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+            <div style="justify-content: center; display: flex">
+
+                <a asp-controller="user" asp-action="update" asp-route-id="@Model.User.Id" class="btn btn-warning mx-1"><span><i class="bi bi-pen-fill"></i></span> Redaktə et</a>
+
+            </div>
+
+        </form>
+    </div>
+</div>

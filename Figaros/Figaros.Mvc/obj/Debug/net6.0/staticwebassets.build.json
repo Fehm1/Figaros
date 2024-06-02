@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WzHOqI45kOWs/ZLDsNyspw9RfY/YFytbddKpzkqrDRE=",
+  "Hash": "ZlCQ1I5OpSBQGrqbMKBYf4iSakJMezAoZReXzisoYDg=",
   "Source": "Figaros.Mvc",
   "BasePath": "_content/Figaros.Mvc",
   "Mode": "Default",
@@ -35411,12 +35411,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\Sponsors\\base.jpg"
     },
     {
-      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Users\\389cdac0-bbc2-412a-b080-85ce5f4fba15WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Users\\77bd6aab-436a-48db-8560-6940590ba2febluetrain.jpg",
       "SourceId": "Figaros.Mvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
       "BasePath": "_content/Figaros.Mvc",
-      "RelativePath": "uploads/Users/389cdac0-bbc2-412a-b080-85ce5f4fba15WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "RelativePath": "uploads/Users/77bd6aab-436a-48db-8560-6940590ba2febluetrain.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35425,15 +35425,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Users\\389cdac0-bbc2-412a-b080-85ce5f4fba15WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Users\\77bd6aab-436a-48db-8560-6940590ba2febluetrain.jpg"
     },
     {
-      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Users\\8fabb395-faba-4762-97ae-caac2d608025WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Users\\b0a2961d-9ebe-43f0-88e4-a0e038c960b7Space.jpg",
       "SourceId": "Figaros.Mvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
       "BasePath": "_content/Figaros.Mvc",
-      "RelativePath": "uploads/Users/8fabb395-faba-4762-97ae-caac2d608025WhatsApp Image 2023-02-05 at 18.46.10.jpg",
+      "RelativePath": "uploads/Users/b0a2961d-9ebe-43f0-88e4-a0e038c960b7Space.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35442,15 +35442,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Users\\8fabb395-faba-4762-97ae-caac2d608025WhatsApp Image 2023-02-05 at 18.46.10.jpg"
+      "OriginalItemSpec": "wwwroot\\uploads\\Users\\b0a2961d-9ebe-43f0-88e4-a0e038c960b7Space.jpg"
     },
     {
-      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Users\\e8c8573f-1a25-468d-9be7-77485ed7f7c5banner.png",
+      "Identity": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\uploads\\Users\\de971838-1249-4df6-a078-6f48195d4457Space.jpg",
       "SourceId": "Figaros.Mvc",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Fehmin\\OneDrive\\İş masası\\Figaros Project\\Figaros\\Figaros.Mvc\\wwwroot\\",
       "BasePath": "_content/Figaros.Mvc",
-      "RelativePath": "uploads/Users/e8c8573f-1a25-468d-9be7-77485ed7f7c5banner.png",
+      "RelativePath": "uploads/Users/de971838-1249-4df6-a078-6f48195d4457Space.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35459,7 +35459,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Users\\e8c8573f-1a25-468d-9be7-77485ed7f7c5banner.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\Users\\de971838-1249-4df6-a078-6f48195d4457Space.jpg"
     }
   ]
 }

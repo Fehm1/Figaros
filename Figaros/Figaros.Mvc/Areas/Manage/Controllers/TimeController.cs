@@ -1,6 +1,4 @@
-﻿using Figaros.Entities.DTOs.ProfessionDtos;
-using Figaros.Entities.DTOs.TimeDtos;
-using Figaros.Services.Abstract;
+﻿using Figaros.Services.Abstract;
 using Figaros.Shared.Utilities.Results.ComplexTypes;
 using Microsoft.AspNetCore.Mvc;
 
